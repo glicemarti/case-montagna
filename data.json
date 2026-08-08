@@ -1,0 +1,942 @@
+{
+ "updated": "2026-08-08",
+ "listings": [
+  {
+   "sec": "casa",
+   "loc": "Oncino — B.ta Siteita Inferiore",
+   "valle": "Valle Po",
+   "alt": 1220,
+   "price": 70000,
+   "sqm": 100,
+   "tip": "Casa indipendente, 4 lati liberi, 4 camere",
+   "stato": "rist",
+   "note": "Ristrutturata di recente, pronta da abitare, termocucina a legna, zona panoramica",
+   "top": true,
+   "links": [
+    [
+     "Gruppo Monviso",
+     "https://www.gruppomonviso.it/casa-indipendente_in_vendita_borgata-siteita-inferiore_oncino_2716093.html"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Crissolo — B.ta Sagne",
+   "valle": "Valle Po",
+   "alt": 1600,
+   "price": 85000,
+   "sqm": 73,
+   "tip": "Baita indipendente, 4 lati liberi",
+   "stato": "buono",
+   "note": "Tetto in lose rifatto, giardino 600 mq, “pronta da vivere senza lavori”",
+   "top": true,
+   "links": [
+    [
+     "casa.it",
+     "https://www.casa.it/immobili/52135265/"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Bellino — B.ta Chiazale",
+   "valle": "Val Varaita",
+   "alt": 1705,
+   "price": 88000,
+   "sqm": 68,
+   "tip": "Terratetto unifamiliare, 2 camere, 2 bagni",
+   "stato": "buono",
+   "note": "Arredato, terreno adiacente, strada asfaltata",
+   "top": true,
+   "links": [
+    [
+     "immobiliare.it",
+     "https://www.immobiliare.it/annunci/114084163/"
+    ],
+    [
+     "casa.it",
+     "https://www.casa.it/immobili/53726633/"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Bellino — B.ta Pleyne",
+   "valle": "Val Varaita",
+   "alt": 1600,
+   "price": 90000,
+   "sqm": 330,
+   "tip": "Casa in pietra, 3 camere",
+   "stato": "rist",
+   "note": "Ristrutturata, già abitabile",
+   "top": true,
+   "links": [
+    [
+     "Gruppo Monviso",
+     "https://www.gruppomonviso.it/appartamento_in_vendita_borgata-pleyne_bellino_1488738.html"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Ostana — Fraz. Ciampagna",
+   "valle": "Valle Po",
+   "alt": 1300,
+   "price": 89000,
+   "sqm": 99,
+   "tip": "Baita arredata, 2 camere",
+   "stato": "buono",
+   "note": "Vista Monviso, terreno privato, stufa a legna, ottimo stato",
+   "top": true,
+   "links": [
+    [
+     "immobiliare.it",
+     "https://www.immobiliare.it/annunci/127562944/"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Acceglio — Borgo Lausetto",
+   "valle": "Val Maira",
+   "alt": 1230,
+   "price": 35000,
+   "sqm": 60,
+   "tip": "Porzione bifamiliare, libera su 2 lati",
+   "stato": "abit",
+   "note": "Camino e stufa a legna, impianti funzionanti, pronta da abitare",
+   "top": true,
+   "links": [
+    [
+     "immobiliare.it",
+     "https://www.immobiliare.it/annunci/130272864/"
+    ],
+    [
+     "casa.it",
+     "https://www.casa.it/immobili/54284270/"
+    ],
+    [
+     "Gruppo Monviso",
+     "https://www.gruppomonviso.it/casa-semi-indipendente_in_vendita_borgo-lausetto_acceglio_1748862.html"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Pontechianale — Fraz. Genzana",
+   "valle": "Val Varaita",
+   "alt": 1600,
+   "price": 95000,
+   "sqm": 100,
+   "tip": "Rustico abitabile da terra a tetto, 2 lati liberi",
+   "stato": "buono",
+   "note": "Vista lago, 2 balconi; solo ex fienile all'ultimo piano grezzo (ampliabile)",
+   "links": [
+    [
+     "immobiliare.it",
+     "https://www.immobiliare.it/annunci/126274471/"
+    ],
+    [
+     "casa.it",
+     "https://www.casa.it/immobili/53192222/"
+    ],
+    [
+     "Gruppo Monviso",
+     "https://www.gruppomonviso.it/rustico_in_vendita_frazione-genzana_pontechianale_1455300.html"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Pontechianale — Fraz. Maddalena",
+   "valle": "Val Varaita",
+   "alt": 1615,
+   "price": 95000,
+   "sqm": 70,
+   "tip": "Porzione di casa / terratetto",
+   "stato": "abit",
+   "note": "Architettura alpina originale, stufa a legna, no spese condominiali",
+   "links": [
+    [
+     "immobiliare.it",
+     "https://www.immobiliare.it/annunci/121647708/"
+    ],
+    [
+     "casa.it",
+     "https://www.casa.it/immobili/51940454/"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Casteldelfino — Fraz. Pusterle",
+   "valle": "Val Varaita",
+   "alt": 1296,
+   "price": 80000,
+   "sqm": 98,
+   "tip": "Casa indipendente su 3 livelli, libera su 2 lati",
+   "stato": "abit",
+   "note": "Giardino recintato, posto auto incluso",
+   "links": [
+    [
+     "casa.it",
+     "https://www.casa.it/immobili/50512213/"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Casteldelfino — Via Cantun",
+   "valle": "Val Varaita",
+   "alt": 1296,
+   "price": 75000,
+   "sqm": 80,
+   "tip": "Porzione di casa bifamiliare, 2 bagni",
+   "stato": "buono",
+   "note": "",
+   "links": [
+    [
+     "casa.it",
+     "https://www.casa.it/immobili/51872920/"
+    ],
+    [
+     "Gruppo Monviso",
+     "https://www.gruppomonviso.it/porzione-di-casa_in_vendita_via-cantun_casteldelfino_1586329.html"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Oncino — B.ta Serre",
+   "valle": "Valle Po",
+   "alt": 1300,
+   "price": 55000,
+   "sqm": 150,
+   "tip": "Baita indipendente su tutti i lati, 3 camere",
+   "stato": "buono",
+   "note": "Terrazzo perimetrale, 3 cantine; una camera al 2° livello ancora grezza",
+   "links": [
+    [
+     "Gruppo Monviso",
+     "https://www.gruppomonviso.it/baita_in_vendita_borgata-serre_oncino_127409.html"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Stroppo — Fraz. Morinesio",
+   "valle": "Val Maira",
+   "alt": 1450,
+   "price": 80000,
+   "sqm": 65,
+   "tip": "Baita",
+   "stato": "buono",
+   "note": "",
+   "links": [
+    [
+     "Gruppo Monviso",
+     "https://www.gruppomonviso.it/baita_in_vendita_frazione-morinesio_stroppo_1623096.html"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Canosio — Via Capoluogo",
+   "valle": "Val Maira",
+   "alt": 1300,
+   "price": 35000,
+   "sqm": 60,
+   "tip": "Casa semi-indipendente, 2 unità",
+   "stato": "buono",
+   "note": "Parzialmente arredata",
+   "links": [
+    [
+     "Gruppo Monviso",
+     "https://www.gruppomonviso.it/casa-semi-indipendente_in_vendita_via-capoluogo_canosio_1628591.html"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Usseglio — Fraz. Margone",
+   "valle": "Valli di Lanzo",
+   "alt": 1410,
+   "price": 78000,
+   "sqm": 195,
+   "tip": "Casa indipendente, 3 camere, 3 livelli",
+   "stato": "abit",
+   "note": "Doppio box, giardini terrazzati, terreno privato",
+   "links": [
+    [
+     "casa.it",
+     "https://www.casa.it/immobili/45600663/"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Usseglio — Fraz. Margone",
+   "valle": "Valli di Lanzo",
+   "alt": 1450,
+   "price": 40000,
+   "sqm": 36,
+   "tip": "Porzione di terratetto",
+   "stato": "rist",
+   "note": "Ribassata da 45.000 € — ristrutturata di recente, arredata, stufa a pellet, cortiletto",
+   "links": [
+    [
+     "immobiliare.it",
+     "https://www.immobiliare.it/annunci/129734124/"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Sampeyre — B.ta Martini",
+   "valle": "Val Varaita",
+   "alt": 1080,
+   "price": 98000,
+   "sqm": 70,
+   "tip": "Casa indipendente, 2 camere",
+   "stato": "rist",
+   "note": "Giardino recintato · quota stimata",
+   "links": [
+    [
+     "Gruppo Monviso",
+     "https://www.gruppomonviso.it/casa-indipendente_in_vendita_borgata-martini_sampeyre_2386817.html"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Sampeyre — Fraz. Rore",
+   "valle": "Val Varaita",
+   "alt": 1130,
+   "price": 49000,
+   "sqm": 120,
+   "tip": "Rustico abitabile",
+   "stato": "abit",
+   "note": "",
+   "links": [
+    [
+     "Gruppo Monviso",
+     "https://www.gruppomonviso.it/rustico_in_vendita_borgata-rore_sampeyre_127066.html"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Sampeyre — B.ta Dragoniere",
+   "valle": "Val Varaita",
+   "alt": 1200,
+   "price": 25000,
+   "sqm": 80,
+   "tip": "Rustico ristrutturato",
+   "stato": "rist",
+   "note": "Quota stimata",
+   "links": [
+    [
+     "Gruppo Monviso",
+     "https://www.gruppomonviso.it/rustico_in_vendita_borgata-dragoniere_sampeyre_48781.html"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Ormea — Fraz. Viozene",
+   "valle": "Monregalese",
+   "alt": 1245,
+   "price": 97000,
+   "sqm": 164,
+   "tip": "Villetta bifamiliare, 2 appartamenti",
+   "stato": "buono",
+   "note": "Cortili, alta Val Tanaro",
+   "links": [
+    [
+     "idealista",
+     "https://www.idealista.it/immobile/35678257/"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Acceglio — Borgo Frere",
+   "valle": "Val Maira",
+   "alt": 1450,
+   "price": 25000,
+   "sqm": 110,
+   "tip": "Baita su 3 livelli, giardino 160 mq",
+   "stato": "abit",
+   "riserva": true,
+   "note": "Piano terra abitabile (serve “una rinfrescata”), fienile al 1° piano da recuperare",
+   "links": [
+    [
+     "Gruppo Monviso",
+     "https://www.gruppomonviso.it/baita_in_vendita_borgo-frere_acceglio_1782692.html"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Casteldelfino — Loc. Caldane",
+   "valle": "Val Varaita",
+   "alt": 1400,
+   "price": 32000,
+   "sqm": 300,
+   "tip": "Baita libera su 3 lati, 2 terrazzi a sud",
+   "stato": "abit",
+   "riserva": true,
+   "note": "Primo piano già utilizzabile (2 camere, bagno, cucina); fienile e piano terra da recuperare",
+   "links": [
+    [
+     "Gruppo Monviso",
+     "https://www.gruppomonviso.it/baita_in_vendita_localita-caldane_casteldelfino_52681.html"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Bellino — B.ta Ribiera",
+   "valle": "Val Varaita",
+   "alt": 1430,
+   "price": 65000,
+   "sqm": 78,
+   "tip": "Casa libera su 2 lati, cantina e giardino",
+   "stato": "abit",
+   "riserva": true,
+   "note": "Primo piano abitabile, sottotetto da ristrutturare",
+   "links": [
+    [
+     "casa.it",
+     "https://www.casa.it/immobili/51472779/"
+    ]
+   ]
+  },
+  {
+   "sec": "casa",
+   "loc": "Prazzo — B.ta Grange",
+   "valle": "Val Maira",
+   "alt": 1100,
+   "price": 85000,
+   "sqm": 400,
+   "tip": "Casa semi-indipendente, 4 unità + 7.000 mq terreno",
+   "stato": "abit",
+   "riserva": true,
+   "note": "Unità al 2° piano in ottimo stato; le altre da valutare/sistemare",
+   "links": [
+    [
+     "Gruppo Monviso",
+     "https://www.gruppomonviso.it/casa-semi-indipendente_in_vendita_borgata-grange_prazzo_2984666.html"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Argentera — Fraz. Bersezio",
+   "valle": "Valle Stura",
+   "alt": 1620,
+   "price": 40000,
+   "sqm": 60,
+   "tip": "Monolocale + monocamera mansardata con ingresso indipendente",
+   "stato": "buono",
+   "note": "Arredato, posto auto coperto (Villaggio Primavera)",
+   "top": true,
+   "links": [
+    [
+     "casa.it",
+     "https://www.casa.it/immobili/53726449/"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Ceresole Reale — Prese Montone",
+   "valle": "Valle Orco",
+   "alt": 1612,
+   "price": 70000,
+   "sqm": 50,
+   "tip": "Bilocale piano terra con giardino privato",
+   "stato": "rist",
+   "note": "Ristrutturato ~10 anni fa, stufa a pellet, libero subito",
+   "top": true,
+   "links": [
+    [
+     "immobiliare.it",
+     "https://www.immobiliare.it/annunci/123834213/"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Acceglio — Borgo Saretto",
+   "valle": "Val Maira",
+   "alt": 1530,
+   "price": 80000,
+   "sqm": 75,
+   "tip": "Quadrilocale in baita ristrutturata, 2 bagni",
+   "stato": "rist",
+   "note": "Arredato stile alpino, caldaia a condensazione, pronto subito",
+   "top": true,
+   "links": [
+    [
+     "immobiliare.it",
+     "https://www.immobiliare.it/annunci/127327965/"
+    ],
+    [
+     "casa.it",
+     "https://www.casa.it/immobili/53495577/"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Pontechianale — centro",
+   "valle": "Val Varaita",
+   "alt": 1610,
+   "price": 57000,
+   "sqm": 60,
+   "tip": "Mansarda arredata, 6 posti letto",
+   "stato": "buono",
+   "note": "Davanti alla seggiovia, vendita da privato",
+   "links": [
+    [
+     "subito.it",
+     "https://www.subito.it/loft-mansarde/mansarda-in-centro-a-pontechianale-cuneo-620549225.htm"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Pontechianale — Fraz. Maddalena",
+   "valle": "Val Varaita",
+   "alt": 1615,
+   "price": 70000,
+   "sqm": 57,
+   "tip": "Bilocale arredato",
+   "stato": "buono",
+   "note": "Pronto da abitare",
+   "links": [
+    [
+     "immobiliare.it",
+     "https://www.immobiliare.it/annunci/131528930/"
+    ],
+    [
+     "idealista",
+     "https://www.idealista.it/immobile/36412414/"
+    ],
+    [
+     "casa.it",
+     "https://www.casa.it/immobili/54536056/"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Pontechianale — Fraz. Maddalena",
+   "valle": "Val Varaita",
+   "alt": 1615,
+   "price": 82000,
+   "sqm": 87,
+   "tip": "Trilocale",
+   "stato": "abit",
+   "note": "Parzialmente arredato",
+   "links": [
+    [
+     "immobiliare.it",
+     "https://www.immobiliare.it/annunci/122817946/"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Pontechianale — Fraz. Maddalena",
+   "valle": "Val Varaita",
+   "alt": 1615,
+   "price": 86000,
+   "sqm": 46,
+   "tip": "Bilocale su due piani, Residence Seggiovia",
+   "stato": "rist",
+   "note": "Ristrutturato di recente, terrazzino, ascensore",
+   "links": [
+    [
+     "idealista",
+     "https://www.idealista.it/immobile/33948703/"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Pontechianale — Fraz. Castello",
+   "valle": "Val Varaita",
+   "alt": 1600,
+   "price": 95000,
+   "sqm": 60,
+   "tip": "Trilocale, camino, 2 balconi",
+   "stato": "buono",
+   "note": "Ascensore",
+   "links": [
+    [
+     "idealista",
+     "https://www.idealista.it/immobile/34453313/"
+    ],
+    [
+     "casa.it",
+     "https://www.casa.it/immobili/53006139/"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Pontechianale — Fraz. Maddalena",
+   "valle": "Val Varaita",
+   "alt": 1615,
+   "price": 98000,
+   "sqm": 77,
+   "tip": "Quadrilocale con box",
+   "stato": "buono",
+   "note": "Arredato",
+   "links": [
+    [
+     "immobiliare.it",
+     "https://www.immobiliare.it/annunci/131445754/"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Pontechianale — Chianale",
+   "valle": "Val Varaita",
+   "alt": 1800,
+   "price": 99000,
+   "sqm": 45,
+   "tip": "Bilocale piano terra + cantina (anno 2001)",
+   "stato": "buono",
+   "note": "Borgo tra i più belli d'Italia, palazzina di 5 unità",
+   "top": true,
+   "links": [
+    [
+     "idealista",
+     "https://www.idealista.it/immobile/34895217/"
+    ],
+    [
+     "casa.it",
+     "https://www.casa.it/immobili/53348411/"
+    ],
+    [
+     "immobiliare.it",
+     "https://www.immobiliare.it/annunci/126816497/"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Pragelato — Souchères Basses",
+   "valle": "Val Chisone",
+   "alt": 1500,
+   "price": 34000,
+   "sqm": 30,
+   "tip": "Monolocale + cantina",
+   "stato": "buono",
+   "note": "",
+   "links": [
+    [
+     "subito.it",
+     "https://www.subito.it/appartamenti/monolocale-a-pragelato-torino-656285084.htm"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Pragelato — Fraz. Traverses",
+   "valle": "Val Chisone",
+   "alt": 1540,
+   "price": 79000,
+   "sqm": 33,
+   "tip": "Monolocale con ingresso indipendente",
+   "stato": "rist",
+   "note": "Classe C, giardino privato ~90 mq, cantina, balcone",
+   "links": [
+    [
+     "Studio Pragelato",
+     "https://www.studiopragelato.it/schedaimmobile?mid=9296"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Pragelato — Souchères Basses",
+   "valle": "Val Chisone",
+   "alt": 1520,
+   "price": 85000,
+   "sqm": 40,
+   "tip": "Bilocale mansardato",
+   "stato": "abit",
+   "note": "",
+   "links": [
+    [
+     "subito.it",
+     "https://www.subito.it/loft-mansarde/bilocale-mansardato-in-borgata-soucheres-basses-torino-617109140.htm"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Pragelato — V.le Cav. Vittorio Veneto",
+   "valle": "Val Chisone",
+   "alt": 1520,
+   "price": 90000,
+   "sqm": 57,
+   "tip": "Trilocale, 4° piano con ascensore",
+   "stato": "buono",
+   "note": "",
+   "links": [
+    [
+     "idealista",
+     "https://www.idealista.it/immobile/34194234/"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Pragelato — Via Albergian",
+   "valle": "Val Chisone",
+   "alt": 1520,
+   "price": 95000,
+   "sqm": 61,
+   "tip": "Bilocale con camino",
+   "stato": "buono",
+   "note": "Giardino condominiale",
+   "links": [
+    [
+     "idealista",
+     "https://www.idealista.it/immobile/32676763/"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Pragelato — Via della Foresta",
+   "valle": "Val Chisone",
+   "alt": 1520,
+   "price": 95000,
+   "sqm": 55,
+   "tip": "Bilocale piano terra",
+   "stato": "abit",
+   "note": "",
+   "links": [
+    [
+     "casa.it",
+     "https://www.casa.it/immobili/49571752/"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Sauze di Cesana — Grangesises",
+   "valle": "Alta Val Susa",
+   "alt": 1840,
+   "price": 68000,
+   "sqm": 30,
+   "tip": "Monolocale con alcova, 3° piano",
+   "stato": "buono",
+   "note": "Borgata a 1840 m, navetta gratuita per Sestriere",
+   "links": [
+    [
+     "Grangesises Immobili",
+     "https://grangesises-immobili.com/immobili/grangesises/"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Sauze di Cesana — Grangesises",
+   "valle": "Alta Val Susa",
+   "alt": 1840,
+   "price": 87000,
+   "sqm": 32,
+   "tip": "Monolocale piano terra con terrazzo e camino",
+   "stato": "buono",
+   "note": "",
+   "links": [
+    [
+     "Grangesises Immobili",
+     "https://grangesises-immobili.com/immobili/grangesises-immobili-propone-monolocale/"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Sestriere — Cond. Le Scalette",
+   "valle": "Alta Val Susa",
+   "alt": 2035,
+   "price": 90000,
+   "sqm": 30,
+   "tip": "Monolocale piano terra",
+   "stato": "abit",
+   "note": "Vicino alle piste",
+   "links": [
+    [
+     "Ag. Lantelme",
+     "https://www.immobiliarelantelmesestriere.it/annunci/condominio-le-scalette-b38/"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Prato Nevoso (Frabosa Sottana)",
+   "valle": "Monregalese",
+   "alt": 1500,
+   "price": 45000,
+   "sqm": 30,
+   "tip": "Monolocale H2 con box privato",
+   "stato": "rist",
+   "lim": true,
+   "note": "Quota al limite (~1500 m): conca di Prato Nevoso, comune in valle",
+   "links": [
+    [
+     "Ag. Bodrone",
+     "https://www.agenziabodrone.it/compravendita_pratonevoso_zoom.jsp?pKey=8"
+    ]
+   ]
+  },
+  {
+   "sec": "apt",
+   "loc": "Prato Nevoso (Frabosa Sottana)",
+   "valle": "Monregalese",
+   "alt": 1500,
+   "price": 59000,
+   "sqm": 27,
+   "tip": "Monolocale arredato",
+   "stato": "buono",
+   "lim": true,
+   "note": "Quota al limite (~1500 m)",
+   "links": [
+    [
+     "immobiliare.it",
+     "https://www.immobiliare.it/annunci/127727142/"
+    ]
+   ]
+  }
+ ],
+ "seen": {
+  "immobiliare": [
+   131528930,
+   131445754,
+   122817946,
+   127327965,
+   126854785,
+   123066835,
+   121647708,
+   114084163,
+   126274471,
+   130272864,
+   127562944,
+   129734124,
+   123834213,
+   126816497,
+   130527918,
+   97314950,
+   131079292,
+   127727142,
+   130331168
+  ],
+  "idealista": [
+   36412414,
+   34194234,
+   32676763,
+   34453313,
+   35678257,
+   34895217,
+   33146268,
+   34705640,
+   36118415,
+   33948703,
+   35359113,
+   22593531,
+   33145717
+  ],
+  "casa": [
+   53348411,
+   53006139,
+   54536056,
+   52135265,
+   53726633,
+   50512213,
+   54284270,
+   51940454,
+   53192222,
+   45600663,
+   51872920,
+   51472779,
+   53495577,
+   53726449,
+   49571752,
+   54542978,
+   51872904,
+   54300733
+  ],
+  "subito": [
+   619422448,
+   656535168,
+   656285084,
+   620549225,
+   617109140
+  ],
+  "gruppomonviso": [
+   35167,
+   34720,
+   1673998,
+   35278,
+   35123,
+   964005,
+   34190,
+   64960,
+   34657,
+   53064,
+   1605135,
+   2395224,
+   2395225,
+   2874049,
+   601299,
+   50791,
+   1582554,
+   1582669,
+   1582542,
+   52932,
+   1586329,
+   52681,
+   1448194,
+   1587165,
+   1462487,
+   62103,
+   1488738,
+   48781,
+   66736,
+   127066,
+   2386817,
+   1729046,
+   51187,
+   1748862,
+   2165440,
+   1486687,
+   1486684,
+   1486689,
+   2074704,
+   1628591,
+   1623096,
+   2716093,
+   127409,
+   1455300,
+   1782692,
+   2984666,
+   2901849
+  ],
+  "altri": [
+   "studiopragelato mid=9296",
+   "lantelme le-scalette-b38",
+   "grangesises 2 monolocali",
+   "bodrone pratonevoso H2 + Grand Soleil"
+  ]
+ },
+ "updated_it": "8 agosto 2026"
+}
