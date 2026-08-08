@@ -159,6 +159,42 @@ ${section("apt")}
       c.classList.toggle("hide", v!=="all" && c.dataset.valle!==v);
     });
   });
+
+  // Aggiornamento live: la pagina prova a caricare i dati più recenti dal
+  // pacchetto npm "case-montagna-data". Se fallisce, restano le schede statiche.
+  var SL={rist:["s-rist","Ristrutturato"],buono:["s-buono","Buono stato"],abit:["s-abit","Abitabile"]};
+  function fmt(n){return n.toLocaleString("it-IT")}
+  function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+  function card(x){
+    return '<div class="card'+(x.top?' top':'')+(x.riserva?' riserva':'')+'" data-valle="'+esc(x.valle)+'">'
+      +'<div class="valle">'+esc(x.valle)+' · ~'+fmt(x.alt)+' m slm</div>'
+      +'<div class="loc">'+esc(x.loc)+'</div>'
+      +'<div class="price">'+fmt(x.price)+' €</div>'
+      +'<div class="meta"><span><b>'+x.sqm+' mq</b></span><span>'+esc(x.tip)+'</span><span><b>'+Math.round(x.price/x.sqm)+'</b> €/mq</span></div>'
+      +'<div class="badges"><span class="stato '+SL[x.stato][0]+'">'+SL[x.stato][1]+'</span>'+(x.lim?'<span class="stato s-lim">quota limite</span>':'')+'</div>'
+      +(x.note?'<div class="note">'+esc(x.note)+'</div>':'')
+      +'<div class="links">'+x.links.map(function(l){return '<a href="'+l[1]+'" target="_blank" rel="noopener">'+esc(l[0])+' →</a>'}).join('')+'</div>'
+      +'</div>';
+  }
+  function renderSec(d,sec,el){
+    var rows=d.listings.filter(function(x){return x.sec===sec});
+    rows.sort(function(a,b){return a.price-b.price});
+    rows.sort(function(a,b){return (a.riserva?1:0)-(b.riserva?1:0)});
+    el.innerHTML=rows.map(card).join("");
+  }
+  (function(){
+    fetch("https://registry.npmjs.org/case-montagna-data/latest").then(function(r){return r.json()}).then(function(meta){
+      var v=meta.version;
+      var urls=["https://cdn.jsdelivr.net/npm/case-montagna-data@"+v+"/data.json",
+                "https://unpkg.com/case-montagna-data@"+v+"/data.json"];
+      return urls.reduce(function(p,u){return p.catch(function(){return fetch(u).then(function(r){if(!r.ok)throw 0;return r.json()})})}, Promise.reject());
+    }).then(function(d){
+      if(!d||!d.listings||!d.listings.length) return;
+      renderSec(d,"casa",document.querySelector("#sec-case .grid"));
+      renderSec(d,"apt",document.querySelector("#sec-apt .grid"));
+      if(d.updated_it){var s=document.querySelector(".sub"); if(s) s.textContent="Aggiornato al "+d.updated_it+" · immobiliare.it, idealista, casa.it, subito.it, Gruppo Monviso + agenzie locali";}
+    }).catch(function(){/* fallback statico */});
+  })();
 })();
 </script>
 </body>
