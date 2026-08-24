@@ -7,8 +7,14 @@ const SL={rist:["s-rist","Ristrutturato"],buono:["s-buono","Buono stato"],abit:[
 const fmt=n=>n.toLocaleString("it-IT");
 const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
 
+const ACTS = `<div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>`;
+
 function card(x){
-  return `<div class="card${x.top?" top":""}${x.riserva?" riserva":""}" data-valle="${x.valle}" data-price="${x.price}" data-alt="${x.alt}" data-sqm="${x.sqm}" data-riserva="${x.riserva?1:0}">
+  return `<div class="card${x.top?" top":""}${x.riserva?" riserva":""}" data-id="${esc(x.links[0][1])}" data-valle="${x.valle}" data-price="${x.price}" data-alt="${x.alt}" data-sqm="${x.sqm}" data-riserva="${x.riserva?1:0}">
+  ${ACTS}
   <div class="valle">${x.valle} · ~${fmt(x.alt)} m slm</div>
   <div class="loc">${esc(x.loc)}</div>
   <div class="price">${fmt(x.price)} €</div>
@@ -62,9 +68,25 @@ const html = `<!DOCTYPE html>
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 16px;display:flex;flex-direction:column;gap:8px;position:relative}
   .card.hide{display:none}
-  .card.top::before{content:"★ consigliata";position:absolute;top:-9px;right:14px;background:var(--gold);color:#fff;font-size:11px;font-weight:700;border-radius:999px;padding:2px 10px}
+  .card.top::before{content:"★ consigliata";position:absolute;top:-9px;left:14px;background:var(--gold);color:#fff;font-size:11px;font-weight:700;border-radius:999px;padding:2px 10px}
   .card.riserva{border-style:dashed}
-  .card.riserva::before{content:"con riserva";position:absolute;top:-9px;right:14px;background:var(--warn);color:#fff;font-size:11px;font-weight:700;border-radius:999px;padding:2px 10px}
+  .card.riserva::before{content:"con riserva";position:absolute;top:-9px;left:14px;background:var(--warn);color:#fff;font-size:11px;font-weight:700;border-radius:999px;padding:2px 10px}
+  .acts{position:absolute;top:9px;right:9px;display:flex;gap:2px;z-index:2}
+  .act{border:none;background:none;cursor:pointer;padding:6px;line-height:0;border-radius:8px}
+  .act:active{transform:scale(.88)}
+  .act svg{width:21px;height:21px;fill:none;stroke:#b9b4a7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:all .15s}
+  .act.fav.on svg{fill:#d64541;stroke:#d64541}
+  .act.del:hover svg{stroke:var(--warn)}
+  .card{padding-right:16px}
+  .card .valle{padding-right:72px}
+  .card.ghost{opacity:.55;border-style:dotted}
+  .confirm{position:absolute;top:6px;right:6px;background:var(--card);border:1px solid var(--warn);border-radius:10px;padding:7px 9px;font-size:12.5px;display:flex;gap:7px;align-items:center;z-index:3;box-shadow:0 2px 10px rgba(0,0,0,.12)}
+  .confirm button{border:1px solid var(--line);background:var(--bg);border-radius:7px;padding:4px 10px;font-size:12.5px;cursor:pointer;color:var(--ink)}
+  .confirm .yes{background:var(--warn);color:#fff;border-color:var(--warn)}
+  .fbtn.favchip.active{background:#d64541;border-color:#d64541;color:#fff}
+  .hidbar{display:none;font-size:12.5px;color:var(--muted);margin:-4px 0 12px}
+  .hidbar.on{display:block}
+  .hidbar a{color:var(--accent);font-weight:650;cursor:pointer;text-decoration:underline}
   .price{font-size:21px;font-weight:750;letter-spacing:-.02em}
   .loc{font-size:15px;font-weight:650}
   .valle{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
@@ -109,7 +131,9 @@ const html = `<!DOCTYPE html>
     <button class="fbtn" data-v="Valli di Lanzo">Lanzo</button>
     <button class="fbtn" data-v="Valle Orco">Orco</button>
     <button class="fbtn" data-v="Monregalese">Monregalese</button>
+    <button class="fbtn favchip" data-f="fav">♥ Preferiti</button>
   </div>
+  <div class="hidbar" id="hidbar"><span id="hidcount">0</span> <span id="hidlabel">annunci nascosti</span> · <a id="hidtoggle">mostra</a></div>
 
   <div class="sec" id="sec-case">
     <h2>Case indipendenti e porzioni <small>· ≥ 1000 m slm · ordinate per prezzo</small></h2>
@@ -149,15 +173,68 @@ ${section("apt")}
   });
   show("case");
 
+  // Preferiti e annunci nascosti (salvati nel browser di chi guarda la pagina)
+  var store={
+    get:function(k){try{return JSON.parse(localStorage.getItem(k))||[]}catch(e){return[]}},
+    set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+  };
+  var favs=store.get("cm_favs"), hidden=store.get("cm_hidden");
+  var curV="all", favOnly=false, showHidden=false;
+
+  function update(){
+    var nHid=0;
+    document.querySelectorAll(".card").forEach(function(c){
+      var id=c.dataset.id;
+      var isFav=favs.indexOf(id)>=0, isHid=hidden.indexOf(id)>=0;
+      var fb=c.querySelector(".act.fav"); if(fb) fb.classList.toggle("on",isFav);
+      if(isHid) nHid++;
+      c.classList.toggle("ghost", isHid && showHidden);
+      var db=c.querySelector(".act.del");
+      if(db){db.setAttribute("aria-label", isHid?"Ripristina":"Nascondi"); db.setAttribute("title", isHid?"Ripristina annuncio":"Nascondi annuncio");}
+      var vis=(curV==="all"||c.dataset.valle===curV) && (!favOnly||isFav) && (!isHid||showHidden);
+      c.classList.toggle("hide",!vis);
+    });
+    var bar=document.getElementById("hidbar");
+    bar.classList.toggle("on", nHid>0);
+    document.getElementById("hidcount").textContent=nHid;
+    document.getElementById("hidlabel").textContent=nHid===1?"annuncio nascosto":"annunci nascosti";
+    document.getElementById("hidtoggle").textContent=showHidden?(nHid===1?"nascondilo di nuovo":"nascondili di nuovo"):"mostra";
+  }
+
   var f=document.getElementById("filters");
   f.classList.add("on");
   f.addEventListener("click",function(e){
     var b=e.target.closest(".fbtn"); if(!b)return;
-    var v=b.dataset.v;
-    f.querySelectorAll(".fbtn").forEach(function(x){x.classList.toggle("active",x===b)});
-    document.querySelectorAll(".card").forEach(function(c){
-      c.classList.toggle("hide", v!=="all" && c.dataset.valle!==v);
-    });
+    if(b.dataset.f==="fav"){ favOnly=!favOnly; b.classList.toggle("active",favOnly); update(); return; }
+    curV=b.dataset.v;
+    f.querySelectorAll(".fbtn[data-v]").forEach(function(x){x.classList.toggle("active",x===b)});
+    update();
+  });
+
+  document.getElementById("hidtoggle").addEventListener("click",function(){ showHidden=!showHidden; update(); });
+  update();
+
+  document.addEventListener("click",function(e){
+    var fav=e.target.closest(".act.fav");
+    if(fav){
+      var id=fav.closest(".card").dataset.id;
+      var i=favs.indexOf(id);
+      if(i>=0) favs.splice(i,1); else favs.push(id);
+      store.set("cm_favs",favs); update(); return;
+    }
+    var del=e.target.closest(".act.del");
+    if(del){
+      var c=del.closest(".card"), id=c.dataset.id;
+      if(hidden.indexOf(id)>=0){ hidden.splice(hidden.indexOf(id),1); store.set("cm_hidden",hidden); update(); return; }
+      if(c.querySelector(".confirm")) return;
+      var box=document.createElement("div");
+      box.className="confirm";
+      box.innerHTML='Nascondere? <button class="yes">Sì</button> <button class="no">No</button>';
+      c.appendChild(box);
+      var t=setTimeout(function(){box.remove()},5000);
+      box.querySelector(".yes").addEventListener("click",function(ev){ev.stopPropagation();clearTimeout(t);box.remove();hidden.push(id);store.set("cm_hidden",hidden);update();});
+      box.querySelector(".no").addEventListener("click",function(ev){ev.stopPropagation();clearTimeout(t);box.remove();});
+    }
   });
 
   // Aggiornamento live: la pagina prova a caricare i dati più recenti dal
@@ -165,8 +242,13 @@ ${section("apt")}
   var SL={rist:["s-rist","Ristrutturato"],buono:["s-buono","Buono stato"],abit:["s-abit","Abitabile"]};
   function fmt(n){return n.toLocaleString("it-IT")}
   function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+  var ACTS='<div class="acts">'
+    +'<button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>'
+    +'<button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>'
+    +'</div>';
   function card(x){
-    return '<div class="card'+(x.top?' top':'')+(x.riserva?' riserva':'')+'" data-valle="'+esc(x.valle)+'">'
+    return '<div class="card'+(x.top?' top':'')+(x.riserva?' riserva':'')+'" data-id="'+esc(x.links[0][1])+'" data-valle="'+esc(x.valle)+'">'
+      +ACTS
       +'<div class="valle">'+esc(x.valle)+' · ~'+fmt(x.alt)+' m slm</div>'
       +'<div class="loc">'+esc(x.loc)+'</div>'
       +'<div class="price">'+fmt(x.price)+' €</div>'
@@ -193,6 +275,7 @@ ${section("apt")}
       renderSec(d,"casa",document.querySelector("#sec-case .grid"));
       renderSec(d,"apt",document.querySelector("#sec-apt .grid"));
       if(d.updated_it){var s=document.querySelector(".sub"); if(s) s.textContent="Aggiornato al "+d.updated_it+" · immobiliare.it, idealista, casa.it, subito.it, Gruppo Monviso + agenzie locali";}
+      update();
     }).catch(function(){/* fallback statico */});
   })();
 })();
