@@ -2,6 +2,8 @@
 const fs = require('fs');
 const DATA = JSON.parse(fs.readFileSync(__dirname + '/data.json', 'utf8'));
 const L = DATA.listings;
+const NEW_MS = 7*24*3600*1000;
+const isNew = x => x.added && (Date.now() - new Date(x.added+'T00:00:00Z').getTime()) < NEW_MS;
 
 const SL={rist:["s-rist","Ristrutturato"],buono:["s-buono","Buono stato"],abit:["s-abit","Abitabile"]};
 const fmt=n=>n.toLocaleString("it-IT");
@@ -19,7 +21,7 @@ function card(x){
   <div class="loc">${esc(x.loc)}</div>
   <div class="price">${fmt(x.price)} €</div>
   <div class="meta"><span><b>${x.sqm} mq</b></span><span>${esc(x.tip)}</span><span><b>${Math.round(x.price/x.sqm)}</b> €/mq</span></div>
-  <div class="badges"><span class="stato ${SL[x.stato][0]}">${SL[x.stato][1]}</span>${x.lim?'<span class="stato s-lim">quota limite</span>':''}</div>
+  <div class="badges">${isNew(x)?'<span class="stato s-new">NUOVA</span>':''}<span class="stato ${SL[x.stato][0]}">${SL[x.stato][1]}</span>${x.lim?'<span class="stato s-lim">quota limite</span>':''}${x.garden?'<span class="stato s-gard">🌿 giardino/terreno</span>':''}</div>
   ${x.note?`<div class="note">${esc(x.note)}</div>`:""}
   <div class="links">${x.links.map(l=>`<a href="${l[1]}" target="_blank" rel="noopener">${esc(l[0])} →</a>`).join("")}</div>
 </div>`;
@@ -29,6 +31,7 @@ function section(sec){
   let d=L.filter(x=>x.sec===sec);
   d.sort((a,b)=>a.price-b.price);
   d.sort((a,b)=>(a.riserva?1:0)-(b.riserva?1:0));
+  d.sort((a,b)=>(isNew(b)?1:0)-(isNew(a)?1:0));
   return d.map(card).join("\n");
 }
 
@@ -98,6 +101,8 @@ const html = `<!DOCTYPE html>
   .s-buono{background:#e7ecf3;color:#3b5a7d}
   .s-abit{background:var(--gold-soft);color:var(--gold)}
   .s-lim{background:var(--warn-soft);color:var(--warn)}
+  .s-new{background:var(--accent);color:#fff;letter-spacing:.04em}
+  .s-gard{background:#e4efdc;color:#4a7031}
   .note{font-size:13px;color:var(--muted)}
   .links{display:flex;gap:6px 8px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
   .links a{font-size:13.5px;font-weight:650;color:var(--accent);text-decoration:none;padding:7px 11px;background:var(--accent-soft);border-radius:8px}
@@ -109,7 +114,7 @@ const html = `<!DOCTYPE html>
   <h1>Casa in montagna — report ricerca</h1>
   <div class="sub">Aggiornato al ${DATA.updated_it || DATA.updated} · immobiliare.it, idealista, casa.it, subito.it, Gruppo Monviso + agenzie locali</div>
   <div class="criteria">
-    <span class="chip">max 100.000 €</span>
+    <span class="chip">max 130.000 €</span>
     <span class="chip">case indipendenti / 2-3 lati / porzioni ≥ 1000 m</span>
     <span class="chip">alloggi solo ≥ 1500 m</span>
     <span class="chip">no ruderi</span>
@@ -128,7 +133,6 @@ const html = `<!DOCTYPE html>
     <button class="fbtn" data-v="Val Chisone">Chisone</button>
     <button class="fbtn" data-v="Alta Val Susa">Alta V. Susa</button>
     <button class="fbtn" data-v="Valle Stura">Stura</button>
-    <button class="fbtn" data-v="Valli di Lanzo">Lanzo</button>
     <button class="fbtn" data-v="Valle Orco">Orco</button>
     <button class="fbtn" data-v="Monregalese">Monregalese</button>
     <button class="fbtn favchip" data-f="fav">♥ Preferiti</button>
@@ -246,6 +250,7 @@ ${section("apt")}
     +'<button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>'
     +'<button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>'
     +'</div>';
+  function isNew(x){return x.added && (Date.now()-new Date(x.added+'T00:00:00Z').getTime()) < 7*24*3600*1000}
   function card(x){
     return '<div class="card'+(x.top?' top':'')+(x.riserva?' riserva':'')+'" data-id="'+esc(x.links[0][1])+'" data-valle="'+esc(x.valle)+'">'
       +ACTS
@@ -253,7 +258,7 @@ ${section("apt")}
       +'<div class="loc">'+esc(x.loc)+'</div>'
       +'<div class="price">'+fmt(x.price)+' €</div>'
       +'<div class="meta"><span><b>'+x.sqm+' mq</b></span><span>'+esc(x.tip)+'</span><span><b>'+Math.round(x.price/x.sqm)+'</b> €/mq</span></div>'
-      +'<div class="badges"><span class="stato '+SL[x.stato][0]+'">'+SL[x.stato][1]+'</span>'+(x.lim?'<span class="stato s-lim">quota limite</span>':'')+'</div>'
+      +'<div class="badges">'+(isNew(x)?'<span class="stato s-new">NUOVA</span>':'')+'<span class="stato '+SL[x.stato][0]+'">'+SL[x.stato][1]+'</span>'+(x.lim?'<span class="stato s-lim">quota limite</span>':'')+(x.garden?'<span class="stato s-gard">🌿 giardino/terreno</span>':'')+'</div>'
       +(x.note?'<div class="note">'+esc(x.note)+'</div>':'')
       +'<div class="links">'+x.links.map(function(l){return '<a href="'+l[1]+'" target="_blank" rel="noopener">'+esc(l[0])+' →</a>'}).join('')+'</div>'
       +'</div>';
@@ -262,6 +267,7 @@ ${section("apt")}
     var rows=d.listings.filter(function(x){return x.sec===sec});
     rows.sort(function(a,b){return a.price-b.price});
     rows.sort(function(a,b){return (a.riserva?1:0)-(b.riserva?1:0)});
+    rows.sort(function(a,b){return (isNew(b)?1:0)-(isNew(a)?1:0)});
     el.innerHTML=rows.map(card).join("");
   }
   (function(){
