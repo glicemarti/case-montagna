@@ -155,7 +155,7 @@ ${section("apt")}
   </div>
 
   <footer>
-    Quote verificate su fonti pubbliche a livello di comune/frazione; per le borgate resta una stima da confermare prima del sopralluogo. Stato come dichiarato dall'inserzionista. Prezzi e disponibilità possono cambiare: verificare sempre sul portale.
+    Cuori e annunci nascosti sono condivisi: chiunque apra questo link vede (e può modificare) gli stessi. Quote verificate su fonti pubbliche a livello di comune/frazione; per le borgate resta una stima da confermare prima del sopralluogo. Stato come dichiarato dall'inserzionista. Prezzi e disponibilità possono cambiare: verificare sempre sul portale.
   </footer>
 </div>
 <script>
@@ -177,13 +177,40 @@ ${section("apt")}
   });
   show("case");
 
-  // Preferiti e annunci nascosti (salvati nel browser di chi guarda la pagina)
+  // Preferiti e annunci nascosti CONDIVISI: salvati su Firebase, visibili a chiunque
+  // abbia il link. Se il database non risponde, si torna al salvataggio locale.
+  var DB='https://case-montagna-default-rtdb.europe-west1.firebasedatabase.app/shared';
   var store={
     get:function(k){try{return JSON.parse(localStorage.getItem(k))||[]}catch(e){return[]}},
     set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
   };
+  function enc(id){return btoa(unescape(encodeURIComponent(id))).replace(/[+]/g,'-').replace(/[/]/g,'_').replace(/=+$/,'')}
   var favs=store.get("cm_favs"), hidden=store.get("cm_hidden");
+  var remoteOk=false;
   var curV="all", favOnly=false, showHidden=false;
+  function setRemote(kind,id,on){
+    if(!remoteOk) return;
+    fetch(DB+'/'+kind+'/'+enc(id)+'.json',{method:on?'PUT':'DELETE',body:on?JSON.stringify(id):undefined}).catch(function(){});
+  }
+  function syncFromRemote(){
+    return Promise.all([
+      fetch(DB+'/favs.json').then(function(r){return r.json()}),
+      fetch(DB+'/hidden.json').then(function(r){return r.json()})
+    ]).then(function(res){
+      remoteOk=true;
+      var f=res[0]||{}, h=res[1]||{};
+      try{
+        if(!localStorage.getItem('cm_migrated')){
+          store.get("cm_favs").forEach(function(id){var k=enc(id); if(!f[k]){f[k]=id; fetch(DB+'/favs/'+k+'.json',{method:'PUT',body:JSON.stringify(id)}).catch(function(){})}});
+          store.get("cm_hidden").forEach(function(id){var k=enc(id); if(!h[k]){h[k]=id; fetch(DB+'/hidden/'+k+'.json',{method:'PUT',body:JSON.stringify(id)}).catch(function(){})}});
+          localStorage.setItem('cm_migrated','1');
+        }
+      }catch(e){}
+      favs=Object.keys(f).map(function(k){return f[k]});
+      hidden=Object.keys(h).map(function(k){return h[k]});
+      update();
+    }).catch(function(){});
+  }
 
   function update(){
     var nHid=0;
@@ -217,6 +244,8 @@ ${section("apt")}
 
   document.getElementById("hidtoggle").addEventListener("click",function(){ showHidden=!showHidden; update(); });
   update();
+  syncFromRemote();
+  document.addEventListener("visibilitychange",function(){ if(document.visibilityState==="visible") syncFromRemote(); });
 
   document.addEventListener("click",function(e){
     var fav=e.target.closest(".act.fav");
@@ -224,19 +253,19 @@ ${section("apt")}
       var id=fav.closest(".card").dataset.id;
       var i=favs.indexOf(id);
       if(i>=0) favs.splice(i,1); else favs.push(id);
-      store.set("cm_favs",favs); update(); return;
+      store.set("cm_favs",favs); setRemote('favs',id,i<0); update(); return;
     }
     var del=e.target.closest(".act.del");
     if(del){
       var c=del.closest(".card"), id=c.dataset.id;
-      if(hidden.indexOf(id)>=0){ hidden.splice(hidden.indexOf(id),1); store.set("cm_hidden",hidden); update(); return; }
+      if(hidden.indexOf(id)>=0){ hidden.splice(hidden.indexOf(id),1); store.set("cm_hidden",hidden); setRemote('hidden',id,false); update(); return; }
       if(c.querySelector(".confirm")) return;
       var box=document.createElement("div");
       box.className="confirm";
       box.innerHTML='Nascondere? <button class="yes">Sì</button> <button class="no">No</button>';
       c.appendChild(box);
       var t=setTimeout(function(){box.remove()},5000);
-      box.querySelector(".yes").addEventListener("click",function(ev){ev.stopPropagation();clearTimeout(t);box.remove();hidden.push(id);store.set("cm_hidden",hidden);update();});
+      box.querySelector(".yes").addEventListener("click",function(ev){ev.stopPropagation();clearTimeout(t);box.remove();hidden.push(id);store.set("cm_hidden",hidden);setRemote('hidden',id,true);update();});
       box.querySelector(".no").addEventListener("click",function(ev){ev.stopPropagation();clearTimeout(t);box.remove();});
     }
   });
