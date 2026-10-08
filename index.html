@@ -38,7 +38,8 @@
   .card.riserva{border-style:dashed}
   .card.riserva::before{content:"con riserva";position:absolute;top:-9px;left:14px;background:var(--warn);color:#fff;font-size:11px;font-weight:700;border-radius:999px;padding:2px 10px}
   .acts{position:absolute;top:9px;right:9px;display:flex;gap:2px;z-index:2}
-  .act{border:none;background:none;cursor:pointer;padding:6px;line-height:0;border-radius:8px}
+  .act{border:none;background:rgba(255,255,255,.82);cursor:pointer;padding:6px;line-height:0;border-radius:8px}
+  .ph{width:calc(100% + 32px);margin:-15px -16px 2px;height:150px;object-fit:cover;border-radius:13px 13px 0 0;display:block;background:#eceae3}
   .act:active{transform:scale(.88)}
   .act svg{width:21px;height:21px;fill:none;stroke:#b9b4a7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:all .15s}
   .act.fav.on svg{fill:#d64541;stroke:#d64541}
@@ -75,7 +76,7 @@
 <body>
 <div class="wrap">
   <h1>Casa in montagna — report ricerca</h1>
-  <div class="sub">Aggiornato al 10 settembre 2026 · immobiliare.it, idealista, casa.it, subito.it, Gruppo Monviso + agenzie locali</div>
+  <div class="sub">Aggiornato al 8 ottobre 2026 · immobiliare.it, idealista, casa.it, subito.it, Gruppo Monviso + agenzie locali</div>
   <div class="criteria">
     <span class="chip">max 130.000 €</span>
     <span class="chip">case indipendenti / 2-3 lati / porzioni ≥ 1000 m</span>
@@ -111,6 +112,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://images.sbito.it/api/v1/sbt-ads-images-pro/images/de/dee07140-c509-4f2b-a2ca-6985a3407340?rule=fullscreen-1x-auto" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Chisone · ~1150 m slm</div>
   <div class="loc">Fenestrelle</div>
   <div class="price">20.000 €</div>
@@ -124,6 +126,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1894322302/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Chisone · ~1210 m slm</div>
   <div class="loc">Salza di Pinerolo (Val Germanasca) — B.ta Coppi</div>
   <div class="price">20.000 €</div>
@@ -137,6 +140,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://storage.googleapis.com/birgus/annunci/2432129/66323295.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Maira · ~1300 m slm</div>
   <div class="loc">San Damiano Macra — B.ta Saretto</div>
   <div class="price">20.000 €</div>
@@ -150,6 +154,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1691462630/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Chisone · ~1060 m slm</div>
   <div class="loc">Fenestrelle — Fraz. Chambons</div>
   <div class="price">24.000 €</div>
@@ -163,6 +168,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://storage.googleapis.com/birgus/annunci/48781/35391509.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Varaita · ~1200 m slm</div>
   <div class="loc">Sampeyre — B.ta Dragoniere</div>
   <div class="price">25.000 €</div>
@@ -176,6 +182,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1910577104/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Chisone · ~1250 m slm</div>
   <div class="loc">Fenestrelle — B.ta Fondufau</div>
   <div class="price">26.000 €</div>
@@ -184,11 +191,26 @@
   <div class="note">Stufa a legna, balcone angolare · quota stimata</div>
   <div class="links"><a href="https://www.immobiliare.it/annunci/128516506/" target="_blank" rel="noopener">immobiliare.it →</a></div>
 </div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/121647722/" data-valle="Val Grana" data-price="26000" data-alt="1000" data-sqm="50" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1740316392/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Grana · ~1000 m slm</div>
+  <div class="loc">Pradleves — B.ta Grange</div>
+  <div class="price">26.000 €</div>
+  <div class="meta"><span><b>50 mq</b></span><span>Casa semi-indipendente libera su 3 lati + annesso, 3 camere</span><span><b>520</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">2 corpi: principale su 2 piani (cucina, bagno-lavanderia, 2 camere di cui una con balcone panoramico) + annesso ~20 mq con 3ª camera, deposito e cantina. Terreno privato pianeggiante 880 mq, riscaldamento a legna (putagé + stufa in maiolica), arredata, allacci comunali. Su Gruppo Monviso (rif. PD006) a 24.000 €. Quota ~1.000 m</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/121647722/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
 <div class="card" data-id="https://www.immobiliare.it/annunci/122671786/" data-valle="Val Chisone" data-price="28000" data-alt="1150" data-sqm="97" data-riserva="0">
   <div class="acts">
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1769588600/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Chisone · ~1150 m slm</div>
   <div class="loc">Fenestrelle — Centro</div>
   <div class="price">28.000 €</div>
@@ -202,6 +224,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1624173221/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Chisone · ~1000 m slm</div>
   <div class="loc">Roure — B.ta Gleisolle (Villaretto)</div>
   <div class="price">28.000 €</div>
@@ -215,6 +238,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/2020644960/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Monregalese · ~1350 m slm</div>
   <div class="loc">Ormea — Fraz. Quarzina</div>
   <div class="price">34.000 €</div>
@@ -228,6 +252,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1953814886/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Maira · ~1230 m slm</div>
   <div class="loc">Acceglio — Borgo Lausetto</div>
   <div class="price">35.000 €</div>
@@ -241,6 +266,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://storage.googleapis.com/birgus/annunci/1628591/62199516.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Maira · ~1300 m slm</div>
   <div class="loc">Canosio — Via Capoluogo</div>
   <div class="price">35.000 €</div>
@@ -249,11 +275,26 @@
   <div class="note">Parzialmente arredata</div>
   <div class="links"><a href="https://www.gruppomonviso.it/casa-semi-indipendente_in_vendita_via-capoluogo_canosio_1628591.html" target="_blank" rel="noopener">Gruppo Monviso →</a></div>
 </div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/131254668/" data-valle="Val Chisone" data-price="38000" data-alt="1000" data-sqm="58" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1976697716/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Chisone · ~1000 m slm</div>
+  <div class="loc">Perrero (Val Germanasca) — B.ta Barneo</div>
+  <div class="price">38.000 €</div>
+  <div class="meta"><span><b>58 mq</b></span><span>Casa semi-indipendente, 2 camere</span><span><b>655</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">PT soggiorno, angolo cottura e camere; sottotetto con finestre (h media 2,51 m); interrato con 2 cantine. Cortile privato chiuso, parcheggio a ~70 m, stufa a legna, classe G. Quota ~1.000 m dichiarata dall'agenzia</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/131254668/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
 <div class="card" data-id="https://www.immobiliare.it/annunci/121646666/" data-valle="Val Maira" data-price="39500" data-alt="1200" data-sqm="100" data-riserva="0">
   <div class="acts">
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1851531243/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Maira · ~1200 m slm</div>
   <div class="loc">Celle di Macra — B.ta Bassura</div>
   <div class="price">39.500 €</div>
@@ -267,6 +308,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1879296261/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Varaita · ~1000 m slm</div>
   <div class="loc">Sampeyre — B.ta Brusà</div>
   <div class="price">40.000 €</div>
@@ -280,6 +322,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://storage.googleapis.com/birgus/annunci/2613848/54493778.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Maira · ~1270 m slm</div>
   <div class="loc">Celle di Macra — B.ta Paschero</div>
   <div class="price">45.000 €</div>
@@ -293,6 +336,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://storage.googleapis.com/birgus/annunci/3177912/66230683.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Valle Gesso · ~1100 m slm</div>
   <div class="loc">Valdieri — Fraz. Desertetto</div>
   <div class="price">45.000 €</div>
@@ -306,6 +350,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://images-1.casa.it/800x600/listing/0/84/21/8f/785209948.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Chisone · ~1380 m slm</div>
   <div class="loc">Usseaux — B.ta Laux</div>
   <div class="price">45.000 €</div>
@@ -314,11 +359,68 @@
   <div class="note">7 locali, 2 bagni, giardino privato (classe G)</div>
   <div class="links"><a href="https://www.casa.it/immobili/51941417/" target="_blank" rel="noopener">casa.it →</a></div>
 </div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/127655058/" data-valle="Val Chisone" data-price="45000" data-alt="1210" data-sqm="57" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1908935412/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Chisone · ~1210 m slm</div>
+  <div class="loc">Salza di Pinerolo (Val Germanasca) — B.ta Didiero</div>
+  <div class="price">45.000 €</div>
+  <div class="meta"><span><b>57 mq</b></span><span>Terratetto semi-indipendente su 3 livelli con giardino</span><span><b>789</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-buono">Buono stato</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">Cucina abitabile, camera + bagno al piano superiore, cantina PT; giardino privato adiacente; stufa a legna; borgata abitata tutto l'anno. Chisone Immobiliare, pubbl. 04/2026. Ribassato il 17/9/2026: da 50.000 a 45.000 € (-10%)</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/127655058/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/126290019/" data-valle="Val Varaita" data-price="45000" data-alt="1300" data-sqm="60" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1857301889/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Varaita · ~1300 m slm</div>
+  <div class="loc">Sampeyre — B.ta Ricchetta</div>
+  <div class="price">45.000 €</div>
+  <div class="meta"><span><b>60 mq</b></span><span>Casa indipendente su 4 lati, 2 camere</span><span><b>750</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">Quota 1.300 m dichiarata in annuncio. 3 livelli: cantina interrata, PT cucina, piano superiore 2 camere + bagno. Parzialmente arredata, infissi legno doppio vetro, stufa, terreno di proprietà, balcone. Già censita in passato su Gruppo Monviso/casa.it, riproposta ora su immobiliare</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/126290019/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/129415214/" data-valle="Val Chisone" data-price="45000" data-alt="1215" data-sqm="55" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1932496736/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Chisone · ~1215 m slm</div>
+  <div class="loc">Massello (Val Germanasca) — B.ta Ciaberso</div>
+  <div class="price">45.000 €</div>
+  <div class="meta"><span><b>55 mq</b></span><span>Casa semi-indipendente, 2 camere, 2 bagni</span><span><b>818</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">PT cucina abitabile con balcone, soggiorno e bagno; P1 2 camere; semi-interrato con 2° bagno e cantina. Appezzamento a giardino/frutteto, stufa a legna. Quota 1.215 m verificata</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/129415214/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/127146113/" data-valle="Val Chisone" data-price="45000" data-alt="1083" data-sqm="79" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1877601823/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Chisone · ~1083 m slm</div>
+  <div class="loc">Perrero (Val Germanasca) — B.ta Traverse</div>
+  <div class="price">45.000 €</div>
+  <div class="meta"><span><b>79 mq</b></span><span>Porzione di casa su 2 livelli, 2 camere</span><span><b>570</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">PT soggiorno con angolo cottura, camera, bagno, balcone e terrazzino; P1 camera matrimoniale con accesso diretto al giardino. Giardino privato in parte pianeggiante, stufa a pellet + camino. Borgata soleggiata abitata tutto l'anno, parcheggio a 30 m. Quota 1.083 m verificata</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/127146113/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
 <div class="card top" data-id="https://www.immobiliare.it/annunci/119373243/" data-valle="Valle Po" data-price="48000" data-alt="1220" data-sqm="140" data-riserva="0">
   <div class="acts">
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1673182123/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Valle Po · ~1220 m slm</div>
   <div class="loc">Oncino — Via Crissolo</div>
   <div class="price">48.000 €</div>
@@ -332,6 +434,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://storage.googleapis.com/birgus/annunci/127066/48178719.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Varaita · ~1130 m slm</div>
   <div class="loc">Sampeyre — Fraz. Rore</div>
   <div class="price">49.000 €</div>
@@ -345,6 +448,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1415382475/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Maira · ~1030 m slm</div>
   <div class="loc">Prazzo — Prazzo Inferiore</div>
   <div class="price">49.000 €</div>
@@ -353,24 +457,40 @@
   <div class="note">Stufa a legna, balcone, di fronte ai servizi</div>
   <div class="links"><a href="https://www.immobiliare.it/annunci/106521903/" target="_blank" rel="noopener">immobiliare.it →</a></div>
 </div>
-<div class="card" data-id="https://www.immobiliare.it/annunci/127655058/" data-valle="Val Chisone" data-price="50000" data-alt="1210" data-sqm="57" data-riserva="0">
+<div class="card" data-id="https://www.immobiliare.it/annunci/126235927/" data-valle="Val Varaita" data-price="49000" data-alt="1025" data-sqm="75" data-riserva="0">
   <div class="acts">
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
-  <div class="valle">Val Chisone · ~1210 m slm</div>
-  <div class="loc">Salza di Pinerolo (Val Germanasca) — B.ta Didiero</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1931468950/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Varaita · ~1025 m slm</div>
+  <div class="loc">Frassino — B.ta Meyra Danna</div>
+  <div class="price">49.000 €</div>
+  <div class="meta"><span><b>75 mq</b></span><span>Baita in pietra su 3 livelli, 2 camere</span><span><b>653</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">Quota 1.025 m dichiarata in annuncio. Soggiorno con angolo cottura, balcone panoramico, camera matrimoniale + cameretta; semi-interrato con cantina ampliabile a taverna. Arredata, riscaldamento a legna, 2 posti auto privati, terreno privato attorno</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/126235927/" target="_blank" rel="noopener">immobiliare.it →</a><a href="https://www.casa.it/immobili/53173776/" target="_blank" rel="noopener">casa.it →</a></div>
+</div>
+<div class="card" data-id="https://www.subito.it/ville-singole-e-a-schiera/sampeyre-bta-martini-casa-indipendente-cuneo-661015734.htm" data-valle="Val Varaita" data-price="50000" data-alt="1080" data-sqm="65" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://images.sbito.it/api/v1/sbt-ads-images-pro/images/3d/3d0ac2e9-6867-4070-8723-6a78e865765f?rule=fullscreen-1x-auto" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Varaita · ~1080 m slm</div>
+  <div class="loc">Sampeyre — B.ta Martini</div>
   <div class="price">50.000 €</div>
-  <div class="meta"><span><b>57 mq</b></span><span>Terratetto semi-indipendente su 3 livelli con giardino</span><span><b>877</b> €/mq</span></div>
-  <div class="badges"><span class="stato s-buono">Buono stato</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
-  <div class="note">Cucina abitabile, camera + bagno al piano superiore, cantina PT; giardino privato adiacente; stufa a legna; borgata abitata tutto l'anno. Chisone Immobiliare, pubbl. 04/2026</div>
-  <div class="links"><a href="https://www.immobiliare.it/annunci/127655058/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+  <div class="meta"><span><b>65 mq</b></span><span>Casa indipendente su 2 livelli, 2 camere, 2 bagni</span><span><b>769</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-buono">Buono stato</span></div>
+  <div class="note">Vendita da privato (annuncio del 16/9): zona giorno, camera e servizio al piano terra; ampio bagno e cameretta al piano superiore. Subito disponibile. Quota B.ta Martini ~1.080 m (stimata come annuncio già in pagina).</div>
+  <div class="links"><a href="https://www.subito.it/ville-singole-e-a-schiera/sampeyre-bta-martini-casa-indipendente-cuneo-661015734.htm" target="_blank" rel="noopener">Subito →</a></div>
 </div>
 <div class="card" data-id="https://www.gruppomonviso.it/baita_in_vendita_borgata-serre_oncino_127409.html" data-valle="Valle Po" data-price="55000" data-alt="1300" data-sqm="150" data-riserva="0">
   <div class="acts">
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://storage.googleapis.com/birgus/annunci/127409/40299601.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Valle Po · ~1300 m slm</div>
   <div class="loc">Oncino — B.ta Serre</div>
   <div class="price">55.000 €</div>
@@ -384,6 +504,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://images-1.casa.it/800x600/listing/0/e0/48/93/824376879.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Varaita · ~1300 m slm</div>
   <div class="loc">Sampeyre — B.ta Graziani-Civalleri</div>
   <div class="price">55.000 €</div>
@@ -397,6 +518,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://storage.googleapis.com/birgus/annunci/1647896/57445918.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Maira · ~1200 m slm</div>
   <div class="loc">Celle di Macra — B.ta Bassura</div>
   <div class="price">55.000 €</div>
@@ -410,6 +532,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://images-1.casa.it/800x600/listing/0/46/d2/a1/785129256.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Chisone · ~1060 m slm</div>
   <div class="loc">Fenestrelle — Fraz. Chambons</div>
   <div class="price">55.000 €</div>
@@ -423,6 +546,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://images-1.casa.it/800x600/listing/0/06/a6/bf/824362595.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Varaita · ~1100 m slm</div>
   <div class="loc">Sampeyre — B.ta Villar</div>
   <div class="price">59.000 €</div>
@@ -431,11 +555,54 @@
   <div class="note">Balcone, riscaldamento autonomo, no spese condominiali; pubblicato 28/8/26</div>
   <div class="links"><a href="https://www.casa.it/immobili/54485471/" target="_blank" rel="noopener">casa.it →</a></div>
 </div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/131618070/" data-valle="Valle Gesso" data-price="59900" data-alt="1093" data-sqm="102" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1985526026/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Valle Gesso · ~1093 m slm</div>
+  <div class="loc">Valdieri — Fraz. Desertetto 75</div>
+  <div class="price">59.900 €</div>
+  <div class="meta"><span><b>102 mq</b></span><span>Casa indipendente libera su 2 lati, 2 camere</span><span><b>587</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-rist">Ristrutturato</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">'Recentemente ristrutturata' (1970): PT zona giorno, bagno, cantina; P1 (scala esterna) 2 camere con balcone; ampio terrazzo, giardino privato 752 mq. Metano + stufa a pellet, doppi vetri. Ag. Vendocasa. Stesso civico dell'annuncio a 85.000 € già in pagina: sembrano unità distinte, da confermare</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/131618070/" target="_blank" rel="noopener">immobiliare.it →</a><a href="https://www.casa.it/immobili/54550010/" target="_blank" rel="noopener">casa.it →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/111214085/" data-valle="Valle Gesso" data-price="60000" data-alt="1000" data-sqm="60" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1508764939/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Valle Gesso · ~1000 m slm</div>
+  <div class="loc">Valdieri — Fraz. Desertetto</div>
+  <div class="price">60.000 €</div>
+  <div class="meta"><span><b>60 mq</b></span><span>Rustico indipendente, 2 camere</span><span><b>1000</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-rist">Ristrutturato</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">Vendita da privato. PT + mezzanino, tetto nuovo, camino a legna + risc. elettrico, arredato, giardino 30 mq, 1 posto auto. 'Piccola frazione a 1000 m' dichiarato in annuncio. ATTENZIONE: possibile sovrapposizione col rustico a 45.000 € già in pagina — verificare</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/111214085/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/128775842/" data-valle="Valle Orco" data-price="63000" data-alt="1030" data-sqm="87" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1917084112/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Valle Orco · ~1030 m slm</div>
+  <div class="loc">Noasca — B.ta Riunt</div>
+  <div class="price">63.000 €</div>
+  <div class="meta"><span><b>87 mq</b></span><span>Terratetto in borgata, 3 camere, 1 bagno</span><span><b>724</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-buono">Buono stato</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">Abitabile subito: tetto rifatto e coibentato nel 2017 (lose in pietra), 3 livelli + sottotetto non abitabile e cantina 17 mq; stufe a legna, balconi vista fiume, cortile privato con barbecue. Borgata sulla SS460 poco a valle del capoluogo (Noasca 1.062 m, quota borgata stimata ~1.030 m); parcheggio a 20 m. Nel Parco Gran Paradiso</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/128775842/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
 <div class="card" data-id="https://www.casa.it/immobili/53258416/" data-valle="Monregalese" data-price="67000" data-alt="1300" data-sqm="70" data-riserva="0">
   <div class="acts">
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://images-1.casa.it/800x600/listing/0/9b/c9/e3/824795150.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Monregalese · ~1300 m slm</div>
   <div class="loc">Ormea — B.ta Quarzina</div>
   <div class="price">67.000 €</div>
@@ -449,6 +616,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1932869634/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Chisone · ~1210 m slm</div>
   <div class="loc">Salza di Pinerolo (Val Germanasca) — B.ta Campoforano</div>
   <div class="price">69.000 €</div>
@@ -457,11 +625,40 @@
   <div class="note">PT soggiorno + angolo cottura + bagno; 1° piano (scala esterna) ampia terrazza, soggiorno/cucina, bagno; camera soppalco; legnaia e forno a legna con portico. Stufa a legna + termoconvettori metano. Gabetti, pubbl. 24/08/2026. Quota borgata = media comunale</div>
   <div class="links"><a href="https://www.immobiliare.it/annunci/129430850/" target="_blank" rel="noopener">immobiliare.it →</a></div>
 </div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/131750282/" data-valle="Val Chisone" data-price="69000" data-alt="1100" data-sqm="103" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1988644608/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Chisone · ~1100 m slm</div>
+  <div class="loc">Perrero (Val Germanasca) — B.ta Rivoira Inferiore</div>
+  <div class="price">69.000 €</div>
+  <div class="meta"><span><b>103 mq</b></span><span>Casa semi-indipendente, 2 camere + sottotetto grezzo recuperabile</span><span><b>670</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">PT soggiorno, cucina, 2 camere, bagno, balcone; sottotetto grezzo per altre camere + 2° balcone; 2 cantine. Giardino ~100 mq. Stufa a legna, classe E. Borgata abitata tutto l'anno. Quota ~1.100 m (Rivoira Superiore 1.160 m verificata)</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/131750282/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/122012996/" data-valle="Val Grana" data-price="69900" data-alt="1100" data-sqm="108" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1752205816/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Grana · ~1100 m slm</div>
+  <div class="loc">Monterosso Grana — Fraz. Frise</div>
+  <div class="price">69.900 €</div>
+  <div class="meta"><span><b>108 mq</b></span><span>Villa unifamiliare indipendente, 2 camere, 2 bagni</span><span><b>647</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-rist">Ristrutturato</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">Ristrutturata nel 2015, ottimo stato: PT open space cucina/soggiorno, P1 camere; cortile privato + giardino con barbecue, terrazza panoramica, stufa a legna, cantina, infissi PVC, no spese. Classe F. ID già censito in passato (quota Frise allora non verificata, ora confermata 1.100-1.200 m)</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/122012996/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
 <div class="card top" data-id="https://www.gruppomonviso.it/casa-indipendente_in_vendita_borgata-siteita-inferiore_oncino_2716093.html" data-valle="Valle Po" data-price="70000" data-alt="1220" data-sqm="100" data-riserva="0">
   <div class="acts">
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://storage.googleapis.com/birgus/annunci/2716093/63643228.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Valle Po · ~1220 m slm</div>
   <div class="loc">Oncino — B.ta Siteita Inferiore</div>
   <div class="price">70.000 €</div>
@@ -470,11 +667,40 @@
   <div class="note">Ristrutturata di recente, pronta da abitare, termocucina a legna, zona panoramica</div>
   <div class="links"><a href="https://www.gruppomonviso.it/casa-indipendente_in_vendita_borgata-siteita-inferiore_oncino_2716093.html" target="_blank" rel="noopener">Gruppo Monviso →</a></div>
 </div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/131774640/" data-valle="Monregalese" data-price="70000" data-alt="1011" data-sqm="165" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1989200260/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Monregalese · ~1011 m slm</div>
+  <div class="loc">Roburent — San Giacomo, Via Giardina</div>
+  <div class="price">70.000 €</div>
+  <div class="meta"><span><b>165 mq</b></span><span>Villa unifamiliare, 4 camere, 2 bagni</span><span><b>424</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span></div>
+  <div class="note">Costruzione 1966, 2 piani + seminterrato con box auto e camera ospiti con bagno; ampio soggiorno con veranda, cantina, più balconi, riscaldamento autonomo, arredata. Giardino non dichiarato</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/131774640/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/126175685/" data-valle="Val Chisone" data-price="70000" data-alt="1100" data-sqm="610" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1854530709/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Chisone · ~1100 m slm</div>
+  <div class="loc">Massello (Val Germanasca) — Strada Provinciale 170</div>
+  <div class="price">70.000 €</div>
+  <div class="meta"><span><b>610 mq</b></span><span>Casa indipendente plurinucleo, 3+ camere, 3 bagni</span><span><b>115</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">610 mq con più unità abitative, magazzini e saloni; giardino privato recintato ~800 mq con tettoie, depositi e orto, 1 box. Potenziale ricettivo. Quota 1.100 m dichiarata (capoluogo Massello 1.118 m)</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/126175685/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
 <div class="card" data-id="https://www.immobiliare.it/annunci/120957876/" data-valle="Val Chisone" data-price="72000" data-alt="1200" data-sqm="90" data-riserva="0">
   <div class="acts">
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1718761330/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Chisone · ~1200 m slm</div>
   <div class="loc">Roure — B.ta Berger (Gran Faetto)</div>
   <div class="price">72.000 €</div>
@@ -488,6 +714,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://images-1.casa.it/800x600/listing/0/d3/6a/19/707358673.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Varaita · ~1296 m slm</div>
   <div class="loc">Casteldelfino — Via Cantun</div>
   <div class="price">75.000 €</div>
@@ -496,11 +723,54 @@
   
   <div class="links"><a href="https://www.casa.it/immobili/51872920/" target="_blank" rel="noopener">casa.it →</a><a href="https://www.gruppomonviso.it/porzione-di-casa_in_vendita_via-cantun_casteldelfino_1586329.html" target="_blank" rel="noopener">Gruppo Monviso →</a></div>
 </div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/114590197/" data-valle="Val Chisone" data-price="75000" data-alt="1230" data-sqm="118" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1575432447/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Chisone · ~1230 m slm</div>
+  <div class="loc">Massello (Val Germanasca) — B.ta Piccolo Passet</div>
+  <div class="price">75.000 €</div>
+  <div class="meta"><span><b>118 mq</b></span><span>Chalet semi-indipendente, 2 camere + sottotetto convertibile</span><span><b>636</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">Interni in ottimo stato (parquet) MA TETTO DA RIFARE — da considerare nel budget. Sottotetto ~40 mq h 2,80-4,20 per altre camere; giardino ~150 mq + orto ~45 mq, terrazzo grande, cantina, GPL + camino. Quota 1.230 m verificata</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/114590197/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/129646350/" data-valle="Monregalese" data-price="78000" data-alt="1011" data-sqm="135" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1978656400/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Monregalese · ~1011 m slm</div>
+  <div class="loc">Roburent — San Giacomo, Via delle Manere</div>
+  <div class="price">78.000 €</div>
+  <div class="meta"><span><b>135 mq</b></span><span>Villetta semi-indipendente su 2 livelli, 2 camere</span><span><b>578</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-rist">Ristrutturato</span></div>
+  <div class="note">Ristrutturata di recente, 'perfette condizioni': soggiorno con camino, cucina abitabile, 2 bagni, 2 camere matrimoniali, terrazzo 35 mq, metano autonomo, arredata, no spese condominiali. 200 m dal centro di San Giacomo</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/129646350/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card top" data-id="https://www.gruppomonviso.it/appartamento_in_vendita_borgata-pleyne_bellino_1488738.html" data-valle="Val Varaita" data-price="79000" data-alt="1600" data-sqm="330" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://storage.googleapis.com/birgus/annunci/1488738/65168841.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Varaita · ~1600 m slm</div>
+  <div class="loc">Bellino — B.ta Pleyne</div>
+  <div class="price">79.000 €</div>
+  <div class="meta"><span><b>330 mq</b></span><span>Casa in pietra, 3 camere</span><span><b>239</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-rist">Ristrutturato</span></div>
+  <div class="note">Ristrutturata, già abitabile. Ribassato il 17/9/2026: da 90.000 a 79.000 € (-12%)</div>
+  <div class="links"><a href="https://www.gruppomonviso.it/appartamento_in_vendita_borgata-pleyne_bellino_1488738.html" target="_blank" rel="noopener">Gruppo Monviso →</a></div>
+</div>
 <div class="card" data-id="https://www.immobiliare.it/annunci/130146518/" data-valle="Val Chisone" data-price="79000" data-alt="1500" data-sqm="200" data-riserva="0">
   <div class="acts">
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1951016374/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Chisone · ~1500 m slm</div>
   <div class="loc">Usseaux — Fraz. Fraisse</div>
   <div class="price">79.000 €</div>
@@ -514,6 +784,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://images-1.casa.it/800x600/listing/0/28/8f/38/656394352.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Varaita · ~1296 m slm</div>
   <div class="loc">Casteldelfino — Fraz. Pusterle</div>
   <div class="price">80.000 €</div>
@@ -527,6 +798,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://storage.googleapis.com/birgus/annunci/1623096/54415151.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Maira · ~1450 m slm</div>
   <div class="loc">Stroppo — Fraz. Morinesio</div>
   <div class="price">80.000 €</div>
@@ -540,6 +812,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://storage.googleapis.com/birgus/annunci/880495/22555797.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Varaita · ~1350 m slm</div>
   <div class="loc">Busca — Valmala, B.ta Ciastralet</div>
   <div class="price">80.000 €</div>
@@ -553,6 +826,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://images-1.casa.it/800x600/listing/0/ca/74/8a/756693311.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Chisone · ~1380 m slm</div>
   <div class="loc">Usseaux — B.ta Laux</div>
   <div class="price">80.000 €</div>
@@ -561,11 +835,26 @@
   <div class="note">Terreno 300 mq, legnaia; livelli già utilizzabili e pronti per essere abitati</div>
   <div class="links"><a href="https://www.casa.it/immobili/51941442/" target="_blank" rel="noopener">casa.it →</a></div>
 </div>
+<div class="card top" data-id="https://www.immobiliare.it/annunci/127368319/" data-valle="Valle Orco" data-price="80000" data-alt="1050" data-sqm="200" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1995278680/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Valle Orco · ~1050 m slm</div>
+  <div class="loc">Noasca — Fraz. Gere di Sopra (Gera)</div>
+  <div class="price">80.000 €</div>
+  <div class="meta"><span><b>200 mq</b></span><span>Casa su più livelli, 4 camere, 2-3 bagni</span><span><b>400</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-buono">Buono stato</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">Del 1980, in ottimo stato e parzialmente arredata: 200 mq, giardino privato ~1.500 mq, terrazza 30-50 mq, balcone, 3 posti auto, riscaldamento autonomo, no spese condominiali. ATTENZIONE: pubblicata con due schede quasi identiche (villa a 'Gere Sopra 4' e terratetto a 'Gera 4', stesso prezzo) — verificare con l'agenzia che sia lo stesso immobile. Frazione adiacente al capoluogo (Noasca 1.062 m)</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/127368319/" target="_blank" rel="noopener">immobiliare.it →</a><a href="https://www.immobiliare.it/annunci/128981412/" target="_blank" rel="noopener">immobiliare.it (2ª scheda) →</a></div>
+</div>
 <div class="card top" data-id="https://www.casa.it/immobili/52135265/" data-valle="Valle Po" data-price="85000" data-alt="1600" data-sqm="73" data-riserva="0">
   <div class="acts">
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://images-1.casa.it/800x600/listing/0/51/49/dc/718858113.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Valle Po · ~1600 m slm</div>
   <div class="loc">Crissolo — B.ta Sagne</div>
   <div class="price">85.000 €</div>
@@ -579,6 +868,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1865628247/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Grana · ~1300 m slm</div>
   <div class="loc">Castelmagno — B.ta Colletto</div>
   <div class="price">85.000 €</div>
@@ -592,6 +882,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1905476206/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Grana · ~1150 m slm</div>
   <div class="loc">Castelmagno — B.ta Chiotti</div>
   <div class="price">85.000 €</div>
@@ -605,6 +896,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://storage.googleapis.com/birgus/annunci/3190432/65962395.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Valle Stura · ~1620 m slm</div>
   <div class="loc">Argentera — Fraz. Bersezio</div>
   <div class="price">85.000 €</div>
@@ -618,6 +910,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1915218228/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Valle Gesso · ~1100 m slm</div>
   <div class="loc">Valdieri — Fraz. Desertetto</div>
   <div class="price">85.000 €</div>
@@ -626,11 +919,26 @@
   <div class="note">Abitabile subito, stufa a pellet, 2 camere; dependance annessa da ristrutturare (opzionale)</div>
   <div class="links"><a href="https://www.immobiliare.it/annunci/128705410/" target="_blank" rel="noopener">immobiliare.it →</a></div>
 </div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/125505593/" data-valle="Val Chisone" data-price="85000" data-alt="1000" data-sqm="140" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1838733817/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Chisone · ~1000 m slm</div>
+  <div class="loc">Perrero (Val Germanasca) — B.ta Chiabrano</div>
+  <div class="price">85.000 €</div>
+  <div class="meta"><span><b>140 mq</b></span><span>Porzione di bifamiliare, 5 camere, 2 bagni</span><span><b>607</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">140 mq su 2 piani + interrato; 3 balconi, veranda, cantina, giardino privato 430 mq, stufa a legna, doppi vetri. Quota ~1.000 m dichiarata dall'agenzia (non confermata da fonte terza)</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/125505593/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
 <div class="card top" data-id="https://www.immobiliare.it/annunci/114084163/" data-valle="Val Varaita" data-price="88000" data-alt="1705" data-sqm="68" data-riserva="0">
   <div class="acts">
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1564619243/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Varaita · ~1705 m slm</div>
   <div class="loc">Bellino — B.ta Chiazale</div>
   <div class="price">88.000 €</div>
@@ -644,6 +952,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1887380236/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Valle Po · ~1300 m slm</div>
   <div class="loc">Ostana — Fraz. Ciampagna</div>
   <div class="price">89.000 €</div>
@@ -652,11 +961,26 @@
   <div class="note">Vista Monviso, terreno privato, stufa a legna, ottimo stato</div>
   <div class="links"><a href="https://www.immobiliare.it/annunci/127562944/" target="_blank" rel="noopener">immobiliare.it →</a></div>
 </div>
+<div class="card" data-id="https://www.gruppomonviso.it/casa-indipendente_in_vendita_borgata-martini_sampeyre_2386817.html" data-valle="Val Varaita" data-price="89000" data-alt="1080" data-sqm="70" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://storage.googleapis.com/birgus/annunci/2386817/64172585.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Varaita · ~1080 m slm</div>
+  <div class="loc">Sampeyre — B.ta Martini</div>
+  <div class="price">89.000 €</div>
+  <div class="meta"><span><b>70 mq</b></span><span>Casa indipendente, 2 camere</span><span><b>1271</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-rist">Ristrutturato</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">Giardino recintato · quota stimata · Ribassi 98k→94k (3/9) → 89k (21/9/26, conferma su casa.it e immobiliare)</div>
+  <div class="links"><a href="https://www.gruppomonviso.it/casa-indipendente_in_vendita_borgata-martini_sampeyre_2386817.html" target="_blank" rel="noopener">Gruppo Monviso →</a><a href="https://www.casa.it/immobili/53409383/" target="_blank" rel="noopener">casa.it →</a></div>
+</div>
 <div class="card" data-id="https://www.immobiliare.it/annunci/129118444/" data-valle="Val Varaita" data-price="89000" data-alt="1100" data-sqm="131" data-riserva="0">
   <div class="acts">
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1925325962/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Varaita · ~1100 m slm</div>
   <div class="loc">Sampeyre — B.ta Villar</div>
   <div class="price">89.000 €</div>
@@ -670,6 +994,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1740385526/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Varaita · ~1360 m slm</div>
   <div class="loc">Sampeyre — B.ta Civalleri</div>
   <div class="price">89.000 €</div>
@@ -678,24 +1003,26 @@
   <div class="note">Arredata, terrazzo panoramico con forno/barbecue, giardino, strada asfaltata tutto l'anno</div>
   <div class="links"><a href="https://www.immobiliare.it/annunci/121646606/" target="_blank" rel="noopener">immobiliare.it →</a><a href="https://www.casa.it/immobili/52094303/" target="_blank" rel="noopener">casa.it →</a><a href="https://www.gruppomonviso.it/baita_in_vendita_borgata-civalleri_sampeyre_2063521.html" target="_blank" rel="noopener">Gruppo Monviso →</a></div>
 </div>
-<div class="card top" data-id="https://www.gruppomonviso.it/appartamento_in_vendita_borgata-pleyne_bellino_1488738.html" data-valle="Val Varaita" data-price="90000" data-alt="1600" data-sqm="330" data-riserva="0">
+<div class="card" data-id="https://www.immobiliare.it/annunci/125089365/" data-valle="Val Chisone" data-price="89000" data-alt="1420" data-sqm="120" data-riserva="0">
   <div class="acts">
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
-  <div class="valle">Val Varaita · ~1600 m slm</div>
-  <div class="loc">Bellino — B.ta Pleyne</div>
-  <div class="price">90.000 €</div>
-  <div class="meta"><span><b>330 mq</b></span><span>Casa in pietra, 3 camere</span><span><b>273</b> €/mq</span></div>
-  <div class="badges"><span class="stato s-rist">Ristrutturato</span></div>
-  <div class="note">Ristrutturata, già abitabile</div>
-  <div class="links"><a href="https://www.gruppomonviso.it/appartamento_in_vendita_borgata-pleyne_bellino_1488738.html" target="_blank" rel="noopener">Gruppo Monviso →</a></div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1828623459/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Chisone · ~1420 m slm</div>
+  <div class="loc">Salza di Pinerolo (Val Germanasca) — B.ta Fontane</div>
+  <div class="price">89.000 €</div>
+  <div class="meta"><span><b>120 mq</b></span><span>Terratetto unifamiliare, 3 camere, terrazza 40 mq a sud</span><span><b>742</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-buono">Buono stato</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">PT cucina abitabile con stufa a legna + soggiorno con camino; 1° piano 2 camere con balcone vista valle + bagno; seminterrato multiuso con ingresso indipendente, bagno, 2 cantine; orto. Pinerolo Case, pubbl. 05/2026. Al limite del budget. Ribassato il 17/9/2026: da 99.000 a 89.000 € (-10%)</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/125089365/" target="_blank" rel="noopener">immobiliare.it →</a></div>
 </div>
 <div class="card" data-id="https://www.immobiliare.it/annunci/131205818/" data-valle="Val Varaita" data-price="90000" data-alt="1100" data-sqm="83" data-riserva="0">
   <div class="acts">
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1975387118/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Varaita · ~1100 m slm</div>
   <div class="loc">Sampeyre — B.ta Villar</div>
   <div class="price">90.000 €</div>
@@ -704,24 +1031,12 @@
   <div class="note">Costruito nel 2010 e tenuto in condizioni impeccabili; posizione tranquilla in borgata</div>
   <div class="links"><a href="https://www.immobiliare.it/annunci/131205818/" target="_blank" rel="noopener">immobiliare.it →</a></div>
 </div>
-<div class="card" data-id="https://www.gruppomonviso.it/casa-indipendente_in_vendita_borgata-martini_sampeyre_2386817.html" data-valle="Val Varaita" data-price="94000" data-alt="1080" data-sqm="70" data-riserva="0">
-  <div class="acts">
-  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
-  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
-</div>
-  <div class="valle">Val Varaita · ~1080 m slm</div>
-  <div class="loc">Sampeyre — B.ta Martini</div>
-  <div class="price">94.000 €</div>
-  <div class="meta"><span><b>70 mq</b></span><span>Casa indipendente, 2 camere</span><span><b>1343</b> €/mq</span></div>
-  <div class="badges"><span class="stato s-rist">Ristrutturato</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
-  <div class="note">Giardino recintato · quota stimata · Ribasso 98k→94k (3/9/26)</div>
-  <div class="links"><a href="https://www.gruppomonviso.it/casa-indipendente_in_vendita_borgata-martini_sampeyre_2386817.html" target="_blank" rel="noopener">Gruppo Monviso →</a><a href="https://www.casa.it/immobili/53409383/" target="_blank" rel="noopener">casa.it →</a></div>
-</div>
 <div class="card" data-id="https://www.immobiliare.it/annunci/126274471/" data-valle="Val Varaita" data-price="95000" data-alt="1600" data-sqm="100" data-riserva="0">
   <div class="acts">
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1931249348/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Varaita · ~1600 m slm</div>
   <div class="loc">Pontechianale — Fraz. Genzana</div>
   <div class="price">95.000 €</div>
@@ -735,6 +1050,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1912698852/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Varaita · ~1615 m slm</div>
   <div class="loc">Pontechianale — Fraz. Maddalena</div>
   <div class="price">95.000 €</div>
@@ -748,6 +1064,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://img4.idealista.it/blur/WEB_DETAIL/0/id.pro.it.image.master/02/41/18/799319778.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Monregalese · ~1245 m slm</div>
   <div class="loc">Ormea — Fraz. Viozene</div>
   <div class="price">97.000 €</div>
@@ -761,6 +1078,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1927968564/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Monregalese · ~1011 m slm</div>
   <div class="loc">Roburent — San Giacomo</div>
   <div class="price">97.000 €</div>
@@ -769,37 +1087,152 @@
   <div class="note">Arredata, castagni secolari; costruzione 1977, impianti da aggiornare in prospettiva</div>
   <div class="links"><a href="https://www.immobiliare.it/annunci/129231120/" target="_blank" rel="noopener">immobiliare.it →</a></div>
 </div>
-<div class="card top" data-id="https://www.immobiliare.it/annunci/131961636/" data-valle="Monregalese" data-price="98000" data-alt="1101" data-sqm="220" data-riserva="0">
+<div class="card" data-id="https://www.casa.it/immobili/52591212/" data-valle="Val Chisone" data-price="99000" data-alt="1200" data-sqm="125" data-riserva="0">
   <div class="acts">
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
-  <div class="valle">Monregalese · ~1101 m slm</div>
-  <div class="loc">Ormea — Fraz. Chioraira</div>
-  <div class="price">98.000 €</div>
-  <div class="meta"><span><b>220 mq</b></span><span>Casale semindipendente ristrutturato, 3 locali, 2 bagni, giardino ~800 mq</span><span><b>445</b> €/mq</span></div>
-  <div class="badges"><span class="stato s-rist">Ristrutturato</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
-  <div class="note">Cucina abitabile, 2 camere, 2 bagni, cantina, 3 posti auto, balcone vista. 'Ristrutturata con impianti moderni' ma classe G. Possibilità di acquistare 3 edifici adiacenti a 12.000 € l'uno. Pubbl. 26/08/2026. Quota: italia.indettaglio.it 1.101 m</div>
-  <div class="links"><a href="https://www.immobiliare.it/annunci/131961636/" target="_blank" rel="noopener">immobiliare.it →</a></div>
-</div>
-<div class="card" data-id="https://www.immobiliare.it/annunci/125089365/" data-valle="Val Chisone" data-price="99000" data-alt="1420" data-sqm="120" data-riserva="0">
-  <div class="acts">
-  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
-  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
-</div>
-  <div class="valle">Val Chisone · ~1420 m slm</div>
-  <div class="loc">Salza di Pinerolo (Val Germanasca) — B.ta Fontane</div>
+  <img class="ph" src="https://images-1.casa.it/800x600/listing/0/cd/1a/f9/736354726.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Chisone · ~1200 m slm</div>
+  <div class="loc">Roure — B.ta May</div>
   <div class="price">99.000 €</div>
-  <div class="meta"><span><b>120 mq</b></span><span>Terratetto unifamiliare, 3 camere, terrazza 40 mq a sud</span><span><b>825</b> €/mq</span></div>
+  <div class="meta"><span><b>125 mq</b></span><span>Casa indipendente su 3 livelli, 3 camere, 2 bagni</span><span><b>792</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">Cortile/giardino 530 mq con barbecue + orto 340 mq poco distante; box doppio 24 mq con WC + posto auto; esposizione sud, raggiungibile tutto l'anno. Quota 1.200 m dichiarata in annuncio. Solo su casa.it</div>
+  <div class="links"><a href="https://www.casa.it/immobili/52591212/" target="_blank" rel="noopener">casa.it →</a></div>
+</div>
+<div class="card" data-id="https://www.idealista.it/immobile/35770102/" data-valle="Valle Po" data-price="105000" data-alt="1500" data-sqm="70" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://img4.idealista.it/blur/WEB_DETAIL-M-L/0/id.pro.it.image.master/a9/e4/5d/802290116.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Valle Po · ~1500 m slm</div>
+  <div class="loc">Crissolo — Fraz. Borgo</div>
+  <div class="price">105.000 €</div>
+  <div class="meta"><span><b>70 mq</b></span><span>Baita in pietra semi-indipendente, libera su 3 lati, 2 camere</span><span><b>1500</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span></div>
+  <div class="note">Fascia 100-130k. 2 livelli + terrazza panoramica vista Monviso; camera grande oggi divisa in 2 vani; cantina, 1 posto auto, stufa a legna, arredata. Corpo adiacente da ristrutturare ampliabile. Già censita in passato su Gruppo Monviso quando il tetto era 100k. Quota borgata ~1.500 m</div>
+  <div class="links"><a href="https://www.idealista.it/immobile/35770102/" target="_blank" rel="noopener">idealista.it →</a><a href="https://www.immobiliare.it/annunci/129156050/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/106289815/" data-valle="Val Chisone" data-price="109000" data-alt="1150" data-sqm="90" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1991672688/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Chisone · ~1150 m slm</div>
+  <div class="loc">Roure — B.ta Gran Faetto</div>
+  <div class="price">109.000 €</div>
+  <div class="meta"><span><b>90 mq</b></span><span>Baita ristrutturata, 2 camere, 1 bagno</span><span><b>1211</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-rist">Ristrutturato</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">Fascia 100-130k. Ristrutturata di recente, pietra a vista e volte a botte originali nel seminterrato (ex stalla, 35 mq) usato come cantina/taverna; 38 mq PT + 34,5 mq 1° piano, balcone panoramico, camino, riscaldamento autonomo, no spese condominiali; giardino recintato adiacente. Borgata soleggiata (~1.150 m) raggiungibile tutto l'anno. Agenzia Evocasa Fenestrelle</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/106289815/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/127098755/" data-valle="Monregalese" data-price="110000" data-alt="1011" data-sqm="149" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1876447901/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Monregalese · ~1011 m slm</div>
+  <div class="loc">Roburent — San Giacomo, Via Sant'Anna 106</div>
+  <div class="price">110.000 €</div>
+  <div class="meta"><span><b>149 mq</b></span><span>Villa bifamiliare su 2 piani collegati, 4 camere</span><span><b>738</b> €/mq</span></div>
   <div class="badges"><span class="stato s-buono">Buono stato</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
-  <div class="note">PT cucina abitabile con stufa a legna + soggiorno con camino; 1° piano 2 camere con balcone vista valle + bagno; seminterrato multiuso con ingresso indipendente, bagno, 2 cantine; orto. Pinerolo Case, pubbl. 05/2026. Al limite del budget</div>
-  <div class="links"><a href="https://www.immobiliare.it/annunci/125089365/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+  <div class="note">Piano superiore ristrutturato di recente, abitabile da subito (3 vani + bagno); piano terra ben tenuto (3 vani + bagno); giardino privato recintato 200 mq, box doppio, 2 cantine, taverna con forno a legna; serramenti esterni appena sostituiti; riscaldamento autonomo</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/127098755/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card top" data-id="https://www.casa.it/immobili/54284433/" data-valle="Val Maira" data-price="110000" data-alt="1540" data-sqm="229" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://images-1.casa.it/800x600/listing/0/16/84/21/814988842.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Maira · ~1540 m slm</div>
+  <div class="loc">Canosio — B.ta Preit</div>
+  <div class="price">110.000 €</div>
+  <div class="meta"><span><b>229 mq</b></span><span>Baita indipendente su 4 lati, 3 camere</span><span><b>480</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">Fascia 100-130k. 3 livelli, giardino privato ~250 mq, volta in pietra, forno a legna, tetto rifatto di recente; ampi spazi al grezzo recuperabili (altre camere ricavabili). Classe G, parcheggio comune vicino. ID immobiliare già visto quando il tetto era 100k</div>
+  <div class="links"><a href="https://www.casa.it/immobili/54284433/" target="_blank" rel="noopener">casa.it →</a><a href="https://www.immobiliare.it/annunci/129467336/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card" data-id="https://www.casa.it/immobili/51956708/" data-valle="Val Maira" data-price="115000" data-alt="1270" data-sqm="150" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://images-1.casa.it/800x600/listing/0/41/c3/5d/708048885.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Maira · ~1270 m slm</div>
+  <div class="loc">Celle di Macra — B.ta Chiesa (Ruà)</div>
+  <div class="price">115.000 €</div>
+  <div class="meta"><span><b>150 mq</b></span><span>Baita su 3 livelli, 2 camere, 2 bagni</span><span><b>767</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">Fascia 100-130k. Del 1800, rifinita in legno e pietra, ultima della borgata (privacy); 3 cantine a volta, terrazza coperta panoramica, cortiletto e giardino privato recintato, box coperto INCLUSO. Riscaldamento autonomo, classe G. Quota 1.270 m verificata (GTA). ID immobiliare già visto quando il tetto era 100k</div>
+  <div class="links"><a href="https://www.casa.it/immobili/51956708/" target="_blank" rel="noopener">casa.it →</a><a href="https://www.immobiliare.it/annunci/121797288/" target="_blank" rel="noopener">immobiliare.it →</a><a href="https://www.gruppomonviso.it/baita_in_vendita_borgata-rua_celle-di-macra_609376.html" target="_blank" rel="noopener">Gruppo Monviso →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/129749916/" data-valle="Val Maira" data-price="119000" data-alt="1358" data-sqm="83" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1940848244/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Maira · ~1358 m slm</div>
+  <div class="loc">San Damiano Macra — B.ta Chesta</div>
+  <div class="price">119.000 €</div>
+  <div class="meta"><span><b>83 mq</b></span><span>Porzione al piano terra di casa di montagna, 2 camere</span><span><b>1434</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-rist">Ristrutturato</span></div>
+  <div class="note">Fascia 100-130k. Ultimata nel 2026, CLASSE A, stufa a pellet, serramenti triplo vetro, doppia esposizione; nessun condominio né spese. RIBASSATA da 140.000 €. Quota Chesta 1.358 m verificata</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/129749916/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/132809270/" data-valle="Val Varaita" data-price="119000" data-alt="1000" data-sqm="70" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  
+  <div class="valle">Val Varaita · ~1000 m slm</div>
+  <div class="loc">Sampeyre — B.ta Ponte</div>
+  <div class="price">119.000 €</div>
+  <div class="meta"><span><b>70 mq</b></span><span>Casa plurifamiliare semindipendente, libera su 3 lati, 2 camere</span><span><b>1700</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span><span class="stato s-lim">quota limite</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">Fascia 100-130k, annuncio Tecnocasa aggiornato il 24/9. Piano terra con soggiorno/cucina e accesso diretto al giardino privato; 2 camere e bagno al piano superiore. Box + posto auto, riscaldamento autonomo con stufa. ATTENZIONE quota: borgata non censita, stimata ~1.000 m (fondovalle presso il capoluogo, 998 m) — al limite del criterio, da verificare in visita.</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/132809270/" target="_blank" rel="noopener">Immobiliare.it →</a><a href="https://www.casa.it/immobili/54816262/" target="_blank" rel="noopener">casa.it →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/130482448/" data-valle="Monregalese" data-price="120000" data-alt="1011" data-sqm="330" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  
+  <div class="valle">Monregalese · ~1011 m slm</div>
+  <div class="loc">Roburent — San Giacomo, Via Serra</div>
+  <div class="price">120.000 €</div>
+  <div class="meta"><span><b>330 mq</b></span><span>Villa bifamiliare (uso unifamiliare), 4 locali, 2 bagni</span><span><b>364</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">Fascia 100-130k. Costruzione 1992, 2 piani, arredata, cucina abitabile, giardino privato + 3 posti auto esterni, posizione panoramica</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/130482448/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/121645088/" data-valle="Val Varaita" data-price="130000" data-alt="1022" data-sqm="70" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1740258564/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Varaita · ~1022 m slm</div>
+  <div class="loc">Frassino — B.ta Campo Soprano</div>
+  <div class="price">130.000 €</div>
+  <div class="meta"><span><b>70 mq</b></span><span>Porzione al piano terra su 2 piani, 2 camere</span><span><b>1857</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">Fascia 100-130k, comune censito per la prima volta. Arredata, abitabile subito; 2 camere (una mansardata), cantina, balcone + terrazzo; orto/giardino adiacente e 2 fabbricati accessori (uno con forno a legna); riscaldamento a legna. Quota borgata 1.022 m verificata</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/121645088/" target="_blank" rel="noopener">immobiliare.it →</a><a href="https://www.casa.it/immobili/51872922/" target="_blank" rel="noopener">casa.it →</a></div>
 </div>
 <div class="card riserva" data-id="https://www.gruppomonviso.it/baita_in_vendita_borgo-frere_acceglio_1782692.html" data-valle="Val Maira" data-price="25000" data-alt="1450" data-sqm="110" data-riserva="1">
   <div class="acts">
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://storage.googleapis.com/birgus/annunci/1782692/66652223.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Maira · ~1450 m slm</div>
   <div class="loc">Acceglio — Borgo Frere</div>
   <div class="price">25.000 €</div>
@@ -813,6 +1246,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://storage.googleapis.com/birgus/annunci/52681/58781853.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Varaita · ~1400 m slm</div>
   <div class="loc">Casteldelfino — Loc. Caldane</div>
   <div class="price">32.000 €</div>
@@ -826,6 +1260,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://images-1.casa.it/800x600/listing/0/81/53/d9/845916964.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Monregalese · ~1300 m slm</div>
   <div class="loc">Ormea — Fraz. Pornassino, Loc. Logne</div>
   <div class="price">33.000 €</div>
@@ -839,6 +1274,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://images.sbito.it/api/v1/sbt-ads-images-pro/images/c6/c669b08b-56a2-4aed-8011-7c3f96eef1dc?rule=fullscreen-1x-auto" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Maira · ~1530 m slm</div>
   <div class="loc">Acceglio — Saretto</div>
   <div class="price">50.000 €</div>
@@ -852,6 +1288,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  
   <div class="valle">Monregalese · ~1100 m slm</div>
   <div class="loc">Ormea — Fraz. Chionea</div>
   <div class="price">55.000 €</div>
@@ -865,6 +1302,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://storage.googleapis.com/birgus/annunci/1246346/49024844.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Maira · ~1500 m slm</div>
   <div class="loc">Canosio — B.ta Ponzo (Colle San Giovanni)</div>
   <div class="price">60.000 €</div>
@@ -878,6 +1316,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://images-1.casa.it/800x600/listing/0/1a/08/32/691525631.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Varaita · ~1430 m slm</div>
   <div class="loc">Bellino — B.ta Ribiera</div>
   <div class="price">65.000 €</div>
@@ -891,19 +1330,21 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://storage.googleapis.com/birgus/annunci/3160431/66237314.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Valle Po · ~1200 m slm</div>
   <div class="loc">Crissolo — Fraz. Borgo</div>
   <div class="price">65.000 €</div>
   <div class="meta"><span><b>100 mq</b></span><span>Baita su 3 livelli, vista Monviso</span><span><b>650</b> €/mq</span></div>
   <div class="badges"><span class="stato s-abit">Abitabile</span></div>
   <div class="note">Bilocale funzionale al 1° piano (camera e bagno); 2° piano con terrazzo panoramico e locale grezzo da recuperare · quota stimata</div>
-  <div class="links"><a href="https://www.gruppomonviso.it/baita_in_vendita_frazione-borgo_crissolo_3160431.html" target="_blank" rel="noopener">Gruppo Monviso →</a></div>
+  <div class="links"><a href="https://www.gruppomonviso.it/baita_in_vendita_frazione-borgo_crissolo_3160431.html" target="_blank" rel="noopener">Gruppo Monviso →</a><a href="https://www.immobiliare.it/annunci/131785360/" target="_blank" rel="noopener">immobiliare.it →</a></div>
 </div>
 <div class="card riserva" data-id="https://www.immobiliare.it/annunci/119367647/" data-valle="Val Chisone" data-price="69000" data-alt="1240" data-sqm="123" data-riserva="1">
   <div class="acts">
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  
   <div class="valle">Val Chisone · ~1240 m slm</div>
   <div class="loc">Bobbio Pellice (Val Pellice) — Villanova</div>
   <div class="price">69.000 €</div>
@@ -917,6 +1358,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1989173448/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Chisone · ~1500 m slm</div>
   <div class="loc">Usseaux — Fraz. Fraisse</div>
   <div class="price">75.000 €</div>
@@ -930,6 +1372,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://storage.googleapis.com/birgus/annunci/2984666/64115861.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Maira · ~1100 m slm</div>
   <div class="loc">Prazzo — B.ta Grange</div>
   <div class="price">85.000 €</div>
@@ -938,17 +1381,46 @@
   <div class="note">Unità al 2° piano in ottimo stato; le altre da valutare/sistemare</div>
   <div class="links"><a href="https://www.gruppomonviso.it/casa-semi-indipendente_in_vendita_borgata-grange_prazzo_2984666.html" target="_blank" rel="noopener">Gruppo Monviso →</a></div>
 </div>
+<div class="card riserva" data-id="https://www.immobiliare.it/annunci/116568031/" data-valle="Val Varaita" data-price="93000" data-alt="1084" data-sqm="85" data-riserva="1">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1615574509/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Varaita · ~1084 m slm</div>
+  <div class="loc">Sampeyre — B.ta Villaretto</div>
+  <div class="price">93.000 €</div>
+  <div class="meta"><span><b>85 mq</b></span><span>Baita ristrutturata su 2 livelli</span><span><b>1094</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-rist">Ristrutturato</span></div>
+  <div class="note">Quota 1.084 m verificata. RISERVA: dato camere discordante — scheda portale 2 camere, descrizione agenzia (Barra) 1 camera + open space; PT con deposito e cantina. Arredata, stufa a legna, fibra ottica. Da chiarire con l'agenzia</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/116568031/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
     </div>
   </div>
 
   <div class="sec" id="sec-apt">
     <h2>Alloggi in quota <small>· solo località ≥ 1500 m slm · ordinati per prezzo</small></h2>
     <div class="grid">
+<div class="card" data-id="https://www.idealista.it/immobile/37035438/" data-valle="Val Varaita" data-price="99000" data-alt="1800" data-sqm="50" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://img4.idealista.it/blur/WEB_DETAIL-M-L/0/id.pro.it.image.master/12/57/15/844218760.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Varaita · ~1800 m slm</div>
+  <div class="loc">Pontechianale — Fraz. Chianale</div>
+  <div class="price">99.000 €</div>
+  <div class="meta"><span><b>50 mq</b></span><span>Trilocale (2 camere), 3° piano senza ascensore</span><span><b>1980</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-new">NUOVA</span><span class="stato s-buono">Buono stato</span></div>
+  <div class="note">Nel borgo alpino di Chianale (1800 m), ai piedi del Colle dell'Agnello; balcone, giardino condominiale con barbecue e forno a legna; condominio montano</div>
+  <div class="links"><a href="https://www.idealista.it/immobile/37035438/" target="_blank" rel="noopener">idealista →</a></div>
+</div>
 <div class="card" data-id="https://www.subito.it/loft-mansarde/mansarda-in-centro-a-pontechianale-cuneo-620549225.htm" data-valle="Val Varaita" data-price="57000" data-alt="1610" data-sqm="60" data-riserva="0">
   <div class="acts">
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://images.sbito.it/api/v1/sbt-ads-images-pro/images/39/393ba1ed-b50e-461e-af04-2e554efb39b5?rule=fullscreen-1x-auto" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Varaita · ~1610 m slm</div>
   <div class="loc">Pontechianale — centro</div>
   <div class="price">57.000 €</div>
@@ -962,6 +1434,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1946289132/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Valle Stura · ~1620 m slm</div>
   <div class="loc">Argentera — Fraz. Bersezio</div>
   <div class="price">65.000 €</div>
@@ -975,6 +1448,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://img4.idealista.it/blur/WEB_DETAIL/0/id.pro.it.image.master/7f/4c/8d/744951574.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Chisone · ~1520 m slm</div>
   <div class="loc">Pragelato — V.le Cav. Vittorio Veneto</div>
   <div class="price">73.000 €</div>
@@ -988,6 +1462,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://img4.idealista.it/blur/WEB_DETAIL/0/id.pro.it.image.master/81/42/8c/733091254.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Chisone · ~1520 m slm</div>
   <div class="loc">Pragelato — Souchères Basses</div>
   <div class="price">73.000 €</div>
@@ -1001,6 +1476,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1885169654/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Maira · ~1530 m slm</div>
   <div class="loc">Acceglio — Borgo Saretto</div>
   <div class="price">80.000 €</div>
@@ -1014,6 +1490,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1773342758/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Varaita · ~1615 m slm</div>
   <div class="loc">Pontechianale — Fraz. Maddalena</div>
   <div class="price">82.000 €</div>
@@ -1027,6 +1504,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1987144556/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Maira · ~1540 m slm</div>
   <div class="loc">Canosio — B.ta Preit</div>
   <div class="price">90.000 €</div>
@@ -1040,6 +1518,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://img4.idealista.it/blur/WEB_DETAIL/0/id.pro.it.image.master/f4/35/b2/762720842.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Val Varaita · ~1600 m slm</div>
   <div class="loc">Pontechianale — Fraz. Castello</div>
   <div class="price">95.000 €</div>
@@ -1053,6 +1532,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1816797961/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Monregalese · ~1500 m slm</div>
   <div class="loc">Prato Nevoso — Via Galassia</div>
   <div class="price">95.000 €</div>
@@ -1066,6 +1546,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  
   <div class="valle">Val Varaita · ~1615 m slm</div>
   <div class="loc">Pontechianale — Fraz. Maddalena</div>
   <div class="price">98.000 €</div>
@@ -1079,6 +1560,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1912492472/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
   <div class="valle">Alta Val Susa · ~1560 m slm</div>
   <div class="loc">Sauze di Cesana — centro</div>
   <div class="price">99.000 €</div>
@@ -1092,6 +1574,7 @@
   <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
   <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
 </div>
+  
   <div class="valle">Val Chisone · ~1520 m slm</div>
   <div class="loc">Pragelato — Via Nazionale 38</div>
   <div class="price">99.000 €</div>
@@ -1099,6 +1582,174 @@
   <div class="badges"><span class="stato s-buono">Buono stato</span></div>
   <div class="note">Ribassato da 113.000 €; predisposizione stufa/camino, riscaldamento semi-autonomo</div>
   <div class="links"><a href="https://www.idealista.it/immobile/33508440/" target="_blank" rel="noopener">idealista.it →</a></div>
+</div>
+<div class="card top" data-id="https://www.immobiliare.it/annunci/111318719/" data-valle="Alta Val Susa" data-price="105000" data-alt="1560" data-sqm="94" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1510685059/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Alta Val Susa · ~1560 m slm</div>
+  <div class="loc">Sauze di Cesana — centro, Via Principale 16</div>
+  <div class="price">105.000 €</div>
+  <div class="meta"><span><b>94 mq</b></span><span>Trilocale, 2 camere, piano terra</span><span><b>1117</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-rist">Ristrutturato</span><span class="stato s-gard">🌿 giardino/terreno</span></div>
+  <div class="note">Completamente ristrutturato, ottime condizioni: soggiorno con angolo cottura, 2 camere, bagno con doccia; corte privata recintata con vista montagne; riscaldamento autonomo, senza spese condominiali. 94 mq a 105.000 € a 1.560 m</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/111318719/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/125364675/" data-valle="Monregalese" data-price="108000" data-alt="1500" data-sqm="50" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1835464633/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Monregalese · ~1500 m slm</div>
+  <div class="loc">Prato Nevoso — Via Croce del Sud</div>
+  <div class="price">108.000 €</div>
+  <div class="meta"><span><b>50 mq</b></span><span>Trilocale 2° piano, 2 camere</span><span><b>2160</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span><span class="stato s-lim">quota limite</span></div>
+  <div class="note">Fascia 100-130k. Arredato, balcone, doppia esposizione N/S, centralizzato; spese 100 €/mese. Box a parte +15.000 € NON incluso. Quota al limite (~1500 m)</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/125364675/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card" data-id="https://www.subito.it/appartamenti/trilocale-prato-nevoso-cuneo-660866580.htm" data-valle="Monregalese" data-price="110000" data-alt="1500" data-sqm="72" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  
+  <div class="valle">Monregalese · ~1500 m slm</div>
+  <div class="loc">Prato Nevoso — Loc. Prel (secondo piazzale)</div>
+  <div class="price">110.000 €</div>
+  <div class="meta"><span><b>72 mq</b></span><span>Trilocale al piano terra, 2 camere</span><span><b>1528</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-rist">Ristrutturato</span><span class="stato s-lim">quota limite</span></div>
+  <div class="note">Fascia 100-130k. Vendita da privato, prezzo trattabile. Soggiorno con cucina a vista, camera matrimoniale + camera con letto a castello, bagno, ripostiglio e cantina; arredato, ottimo stato ristrutturato, teleriscaldamento centralizzato, possibilità di posto auto coperto, a pochi passi dalle piste. Quota al limite (~1500 m).</div>
+  <div class="links"><a href="https://www.subito.it/appartamenti/trilocale-prato-nevoso-cuneo-660866580.htm" target="_blank" rel="noopener">subito.it →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/121852822/" data-valle="Monregalese" data-price="113000" data-alt="1500" data-sqm="70" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1747098552/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Monregalese · ~1500 m slm</div>
+  <div class="loc">Prato Nevoso — Via Galassia 17</div>
+  <div class="price">113.000 €</div>
+  <div class="meta"><span><b>70 mq</b></span><span>Quadrilocale 1° piano ('Rododendri Est')</span><span><b>1614</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-buono">Buono stato</span><span class="stato s-lim">quota limite</span></div>
+  <div class="note">Fascia 100-130k. Soggiorno/pranzo con angolo cottura + cucina separata, cantina e ampio posto auto, riscaldamento centralizzato, strada privata e servizio custode. Quota al limite (~1500 m)</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/121852822/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/92972148/" data-valle="Alta Val Susa" data-price="115000" data-alt="1560" data-sqm="75" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1169480218/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Alta Val Susa · ~1560 m slm</div>
+  <div class="loc">Sauze di Cesana — centro, Via Principale 19</div>
+  <div class="price">115.000 €</div>
+  <div class="meta"><span><b>75 mq</b></span><span>Trilocale, 2 camere, piano terra con terrazza</span><span><b>1533</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-rist">Ristrutturato</span></div>
+  <div class="note">Piano terra di chalet bifamiliare ristrutturato: soggiorno con angolo cottura, 2 camere, bagno, ampia terrazza panoramica soleggiata; riscaldamento autonomo, senza spese condominiali (ag. Bimar). Possibile che sia un'altra unità della stessa baita dell'annuncio Via Principale 18 a 99.000 € già in pagina: verificare</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/92972148/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card" data-id="https://www.idealista.it/immobile/27673576/" data-valle="Val Chisone" data-price="117000" data-alt="1520" data-sqm="66" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://img4.idealista.it/blur/WEB_DETAIL-M-L/0/id.pro.it.image.master/5b/63/c3/799056986.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Chisone · ~1520 m slm</div>
+  <div class="loc">Pragelato — Via Nazionale 77</div>
+  <div class="price">117.000 €</div>
+  <div class="meta"><span><b>66 mq</b></span><span>Quadrilocale, 3 camere, 4° piano senza ascensore</span><span><b>1773</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-buono">Buono stato</span></div>
+  <div class="note">Ampio balcone angolare esposto a sud-ovest con vista valle; cucina abitabile; teleriscaldamento semi-autonomo + stufa a pellet; palazzina del 1960, spese cond. ~100 €/mese</div>
+  <div class="links"><a href="https://www.idealista.it/immobile/27673576/" target="_blank" rel="noopener">idealista →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/127585558/" data-valle="Val Chisone" data-price="119000" data-alt="1520" data-sqm="51" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1887848062/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Val Chisone · ~1520 m slm</div>
+  <div class="loc">Pragelato — Ruà, Via Mulini 4</div>
+  <div class="price">119.000 €</div>
+  <div class="meta"><span><b>51 mq</b></span><span>Trilocale, 2 camere, 2° piano con ascensore</span><span><b>2333</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-buono">Buono stato</span></div>
+  <div class="note">51 mq calpestabili (63 commerciali): tinello con cucinino, camera matrimoniale, cameretta, bagno; balcone e box auto al piano interrato. Condominio anni '70 con custode: spese 75 €/mese + ~1.100 €/anno riscaldamento centralizzato</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/127585558/" target="_blank" rel="noopener">immobiliare.it →</a><a href="https://www.idealista.it/immobile/35188791/" target="_blank" rel="noopener">idealista →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/115870869/" data-valle="Monregalese" data-price="125000" data-alt="1500" data-sqm="56" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1601783427/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Monregalese · ~1500 m slm</div>
+  <div class="loc">Prato Nevoso — Via Galassia 147</div>
+  <div class="price">125.000 €</div>
+  <div class="meta"><span><b>56 mq</b></span><span>Trilocale 1° piano con box e cantina</span><span><b>2232</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-buono">Buono stato</span><span class="stato s-lim">quota limite</span></div>
+  <div class="note">Fascia 100-130k. Ottimo stato, esposto verso le piste, terrazzo perimetrale, box con cancello automatico e accesso diretto, ampia cantina, arredato in legno massello (7 posti letto), centralizzato. Quota al limite (~1500 m)</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/115870869/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card" data-id="https://www.casa.it/immobili/53459424/" data-valle="Monregalese" data-price="125000" data-alt="1500" data-sqm="71" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  
+  <div class="valle">Monregalese · ~1500 m slm</div>
+  <div class="loc">Prato Nevoso — Via Galassia 2</div>
+  <div class="price">125.000 €</div>
+  <div class="meta"><span><b>71 mq</b></span><span>Trilocale al piano terra, 2 camere</span><span><b>1761</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span><span class="stato s-lim">quota limite</span></div>
+  <div class="note">Fascia 100-130k. Ingresso su soggiorno, disimpegno, 2 camere, bagno e ripostiglio; posto auto coperto e cantina, ascensore. Spese condominiali €145/mese. Quota al limite (~1.500 m).</div>
+  <div class="links"><a href="https://www.casa.it/immobili/53459424/" target="_blank" rel="noopener">Casa.it →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/128525852/" data-valle="Monregalese" data-price="129000" data-alt="1500" data-sqm="55" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1910807310/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Monregalese · ~1500 m slm</div>
+  <div class="loc">Prato Nevoso — Via Sirio 13 (res. Sky)</div>
+  <div class="price">129.000 €</div>
+  <div class="meta"><span><b>55 mq</b></span><span>Trilocale 3° e ultimo piano con ascensore</span><span><b>2345</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-buono">Buono stato</span><span class="stato s-lim">quota limite</span></div>
+  <div class="note">Fascia 100-130k. Ingresso, soggiorno, cucinino, 2 camere, bagno, dispensa, 2 balconi; doppi vetri, fibra; spese 135 €/mese, vista aperta. Quota al limite (~1500 m)</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/128525852/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/130671402/" data-valle="Monregalese" data-price="130000" data-alt="1500" data-sqm="55" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1963264210/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Monregalese · ~1500 m slm</div>
+  <div class="loc">Prato Nevoso — Via Malanotte 80 ('Le Ville')</div>
+  <div class="price">130.000 €</div>
+  <div class="meta"><span><b>55 mq</b></span><span>Trilocale in chalet, 3° piano</span><span><b>2364</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-buono">Buono stato</span><span class="stato s-lim">quota limite</span></div>
+  <div class="note">Fascia 100-130k. Teleriscaldamento a metano + stufa a pellet canalizzata; DUE box + 2 posti auto + cantina privata; complesso recintato nel bosco; spese 160 €/mese. Quota al limite (~1500 m)</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/130671402/" target="_blank" rel="noopener">immobiliare.it →</a></div>
+</div>
+<div class="card" data-id="https://www.immobiliare.it/annunci/129580056/" data-valle="Monregalese" data-price="130000" data-alt="1500" data-sqm="56" data-riserva="0">
+  <div class="acts">
+  <button class="act fav" aria-label="Preferito" title="Segna come preferito"><svg viewBox="0 0 24 24"><path d="M12 21C7 16.6 3 13 3 8.9 3 6.2 5.2 4 7.9 4c1.6 0 3.1.8 4.1 2 1-1.2 2.5-2 4.1-2C18.8 4 21 6.2 21 8.9c0 4.1-4 7.7-9 12.1z"/></svg></button>
+  <button class="act del" aria-label="Nascondi" title="Nascondi annuncio"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V5h6v2m-8 0 1 13h8l1-13M10 11v6M14 11v6"/></svg></button>
+</div>
+  <img class="ph" src="https://pwm.im-cdn.it/image/1936646652/m-c.jpg" alt="" loading="lazy" onerror="this.remove()">
+  <div class="valle">Monregalese · ~1500 m slm</div>
+  <div class="loc">Prato Nevoso — Via Galassia 147 (1° piano)</div>
+  <div class="price">130.000 €</div>
+  <div class="meta"><span><b>56 mq</b></span><span>Trilocale senza barriere architettoniche</span><span><b>2321</b> €/mq</span></div>
+  <div class="badges"><span class="stato s-abit">Abitabile</span><span class="stato s-lim">quota limite</span></div>
+  <div class="note">Fascia 100-130k. Cucina a vista, terrazza panoramica, arredato, 'pronto da abitare'; posto auto raggiungibile con ascensore dal garage; spese 108 €/mese. Quota al limite (~1500 m)</div>
+  <div class="links"><a href="https://www.immobiliare.it/annunci/129580056/" target="_blank" rel="noopener">immobiliare.it →</a><a href="https://www.casa.it/immobili/54119249/" target="_blank" rel="noopener">casa.it →</a></div>
 </div>
     </div>
   </div>
@@ -1232,6 +1883,7 @@
   function card(x){
     return '<div class="card'+(x.top?' top':'')+(x.riserva?' riserva':'')+'" data-id="'+esc(x.links[0][1])+'" data-valle="'+esc(x.valle)+'">'
       +ACTS
+      +(x.photo?'<img class="ph" src="'+x.photo+'" alt="" loading="lazy" onerror="this.remove()">':'')
       +'<div class="valle">'+esc(x.valle)+' · ~'+fmt(x.alt)+' m slm</div>'
       +'<div class="loc">'+esc(x.loc)+'</div>'
       +'<div class="price">'+fmt(x.price)+' €</div>'
